@@ -3,7 +3,7 @@
         <a href="{{url('/dashboard')}}" class="header-logo">
             <img src="{{ asset('/public/theme/images/sharpmower.jpg')}}" class="img-fluid rounded-normal light-logo" alt="logo">
             <img src="{{ asset('/public/theme/images/logo-dark.png')}}" class="img-fluid rounded-normal d-none sidebar-light-img" alt="logo">
-            <span>Datum</span>
+            <span>SharpMower</span>
         </a>
         <div class="side-menu-bt-sidebar-1">
             <svg xmlns="http://www.w3.org/2000/svg" class="text-light wrapper-menu" width="30" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -25,9 +25,9 @@
                         <p class="mb-0 w-10 badge badge-pill badge-primary">6</p>
                     </a>
                 </li>
-            
 
-                        <li class="sidebar-layout">
+
+                <li class="sidebar-layout">
                     <a href="#app1" class="collapsed svg-icon" data-toggle="collapse" aria-expanded="false">
                         <i>
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -57,14 +57,14 @@
                                 </i><span class="">Task Add</span>
                             </a>
                         </li>
-                     
+
                     </ul>
                 </li>
 
 
 
                 <li class=" sidebar-layout">
-                    <a href="../backend/customer.html" class="svg-icon ">
+                    <a href="{{ url('work_order/my_schedule') }}" class="svg-icon ">
                         <i class="">
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
@@ -74,7 +74,19 @@
                     </a>
                 </li>
 
-              
+
+                <li class=" sidebar-layout">
+                    <a href="{{ url('/team/'.Auth::user()->team_id) }}">
+                        <i class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg>
+                        </i>
+                        <span class="ml-2">{{ Auth::user()->team->name }}</span>
+                    </a>
+                </li>
+
+
             </ul>
         </nav>
         <div class="pt-5 pb-5"></div>
