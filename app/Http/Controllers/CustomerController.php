@@ -89,9 +89,9 @@ class CustomerController extends Controller
         $customer2->city = $request->city;
         $customer2->state = $request->state;
       
-        $customer->preferred_contact_method = $request->preferred_contact_method;
+        $customer2->preferred_contact_method = $request->preferred_contact_method;
         if ($request->do_not_contact) {
-          $customer->do_not_contact = 1;
+          $customer2->do_not_contact = 1;
         }
 
         if ($request->hoa) {
