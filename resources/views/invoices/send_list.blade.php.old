@@ -1,0 +1,32 @@
+@if (count($invoices) > 0)
+<table class="table table-condensed table-striped">
+	<thead>
+		<th>Date</th>
+		<th>Customer</th>
+		<th>Address</th>
+    <th>Amount</th>
+		<th>View</th>
+    <th>Sent</th>
+	</thead>
+	<tbody>
+		@foreach($invoices as $invoice)
+		<tr>
+			<td>{{ $invoice->created_at }}</td>
+			<td>{{ $invoice->work_order->customer->full_name() }}</td>
+      <td>{!! $invoice->work_order->customer->full_address() !!}</td>
+			<td>${{ $invoice->amount }}</td>
+			<td><a href="{{ url('invoice/'.$invoice->id) }}" class="btn btn-info btn-xs"><i class="fa fa-eye"></i></a></td>
+			<td>
+				<form action="{{ url('invoice/send/'.$invoice->id) }}" method="POST">
+                {{ csrf_field() }}
+                {{ method_field('PATCH') }}
+                <button class="btn btn-success btn-xs">
+                    <i class="fa fa-check"></i>
+            </form>
+			</td>			
+		</tr>
+		@endforeach
+	</tbody>
+</table>
+
+@endif

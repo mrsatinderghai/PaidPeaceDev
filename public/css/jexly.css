@@ -1,0 +1,58 @@
+.navbar-custom {
+	background-color: #1a1360;
+	color: white;
+	border: 0;
+	border-radius: 0 !important;
+}
+
+ .navbar-default .navbar-nav > li > a {
+   color: white; /*Change active text color here*/
+    }
+
+      .dropdown-menu > li > a:hover,
+   .dropdown-menu > li > a:focus {
+    color: white;
+   text-decoration: none;  /*change color of links in drop down here*/
+   }
+
+   .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+color: white;  /*Sets the text hover color on navbar*/
+}
+
+.navbar-default .navbar-brand {
+	color:white;
+}
+
+.btn-custom, .btn-custom > a:hover {
+	background-color: #1a1360;
+	color: white;
+	text-decoration: none;
+}
+
+.work_order_plaque {
+	background-color: powderblue;
+	border: 1px solid darkgray;
+	padding: 5px;
+	border-radius: 5px;
+	margin: 5px;
+	height: 50px;
+	width: 150px;
+	display: inline-block;
+	float: left;
+}
+
+.wo_plaque_holder {
+	border: 1px solid gray;
+	border-radius: 5px;
+	background-color: lightgray;
+	margin: 5px;
+	padding: 5px;
+}
+
+.delivery {
+	background: repeating-linear-gradient( 45deg, #606dbc, #606dbc 10px, #465298 10px, #465298 20px );
+}
+
+.work_order_plaque a:link {
+	color: black; 
+}
