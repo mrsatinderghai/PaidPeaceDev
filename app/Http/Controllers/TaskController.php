@@ -71,9 +71,21 @@ class TaskController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Request $request)
     {
-       //
+        $team_members = $request->user()->team->members;
+        $team_member_options = array();
+
+        foreach($team_members as $member) {
+            $team_member_options[$member->id] = $member->name;
+        } 
+        return view('tasks.add', [
+            'tasks' => $this->tasks->assigned_to_user($request->user()),
+            'team_tasks' => $this->tasks->team_tasks(),
+            'hot_tasks' => $this->tasks->due_in_days(7),
+            'team_members' => $team_member_options,
+            'title' => 'My Tasks'
+            ]);
     }
 
     /**
@@ -111,14 +123,15 @@ class TaskController extends Controller
         $user = User::findOrFail($request->assigned_to_user_id);
 
 
-        Mail::send('emails.update', ['item' => $new_task, 'notes' => array()], function ($m) use ($user, $new_task) {
+        // Mail::send('emails.update', ['item' => $new_task, 'notes' => array()], function ($m) use ($user, $new_task) {
 
-            $m->from('noreply@jexly.net', 'Jexly');
+        //     $m->from('noreply@jexly.net', 'Jexly');
 
-            $m->to($user->email, $user->name)->subject('Jexly - New Task - '.$new_task->name);
-        });
+        //     $m->to($user->email, $user->name)->subject('Jexly - New Task - '.$new_task->name);
+        // });
 
-        return Redirect::back();
+        // return Redirect::back();
+        return redirect('task');
 
     }
 

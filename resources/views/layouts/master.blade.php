@@ -12,6 +12,8 @@
 
   <link rel="stylesheet" href="{{ asset('public/theme/css/backend-plugin.min.css') }}">
   <link rel="stylesheet" href="{{ asset('public/theme/css/backend.css?v=1.0.0') }}">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/flick/jquery-ui.css">
 </head>
 
 <body>
@@ -31,6 +33,10 @@
 
 
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <script src="{{ asset('public/theme/js/backend-bundle.min.js') }}"></script>
   <script src="{{ asset('public/theme/js/customizer.js') }}"></script>
   <script src="{{ asset('public/theme/js/sidebar.js') }}"></script>
