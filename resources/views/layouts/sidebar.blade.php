@@ -1,7 +1,7 @@
 <div class="iq-sidebar  sidebar-default  ">
     <div class="iq-sidebar-logo d-flex align-items-end justify-content-between">
         <a href="{{url('/dashboard')}}" class="header-logo">
-            <img src="{{ asset('/public/theme/images/logo.png')}}" class="img-fluid rounded-normal light-logo" alt="logo">
+            <img src="{{ asset('/public/theme/images/sharpmower.jpg')}}" class="img-fluid rounded-normal light-logo" alt="logo">
             <img src="{{ asset('/public/theme/images/logo-dark.png')}}" class="img-fluid rounded-normal d-none sidebar-light-img" alt="logo">
             <span>Datum</span>
         </a>
