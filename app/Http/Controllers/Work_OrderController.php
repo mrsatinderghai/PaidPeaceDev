@@ -841,7 +841,7 @@ class Work_OrderController extends Controller
       $status_options = config('constants.status_options');
 
 
-      return view('work_orders.schedule_for_delivery', [
+      return view('work_orders.list_for_schedule', [
         'work_orders' => $work_orders,
         'work_order' => $work_order,
         'customer_select' => $customer_select,

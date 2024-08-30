@@ -66,3 +66,14 @@
     -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
     transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 }
+
+.edit_div {
+    position: absolute;
+    right: 5px;
+    z-index: 99;
+    top: 5px;
+}
+a.edit_btn svg {
+    width: 35px;
+    color: white;
+}

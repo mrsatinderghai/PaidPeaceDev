@@ -35,7 +35,7 @@ class CustomerController extends Controller
         $customers_all = Customer::orderby('first_name')->get();
         $customer = new Customer;
 
-        return view('customers.index', [
+        return view('customers.list', [
           'customers' => $customers,
           'customers_all' => $customers_all,
           'customer' => $customer,
@@ -47,9 +47,22 @@ class CustomerController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Request $request, $sort_by = null)
     {
         //
+        if (! is_null($sort_by)) {
+          $request->session()->put('customer_sort_by', $sort_by);
+        }
+        $sort_by = session('customer_sort_by', 'last_name');
+        $customers = Customer::orderby($sort_by)->paginate(15);
+        $customers_all = Customer::orderby('first_name')->get();
+        $customer = new Customer;
+
+        return view('customers.create', [
+          'customers' => $customers,
+          'customers_all' => $customers_all,
+          'customer' => $customer,
+        ]);
     }
 
     /**
@@ -301,7 +314,7 @@ class CustomerController extends Controller
         $customers_all = Customer::orderby('first_name')->get();
         $customer = new Customer;
 
-        return view('customers.index', [
+        return view('customers.list', [
           'customers' => $customers,
           'customers_all' => $customers_all,
           'customer' => $customer,
