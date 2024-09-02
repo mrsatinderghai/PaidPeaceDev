@@ -1,6 +1,4 @@
-
-
-<table class="table table-condensed table-striped table-ajax" data-url='{{isset($url)?$url:"/data/invoices/all"}}'>
+<table id="datatable-1" class="table data-table table-striped table-bordered table-ajax" data-url='{{isset($url)?$url:"/data/invoices/all"}}'>
 	<thead>
 		<th>Number</th>
 		<th>Customer</th>

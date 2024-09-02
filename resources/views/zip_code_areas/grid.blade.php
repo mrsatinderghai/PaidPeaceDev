@@ -7,17 +7,17 @@
 <div class="row">
     @foreach($areas as $area)
 
-        <div class="col-xs-4">
-                    <h5>             {{$area}} </h5>
-            <div style="background-color:lightgray; border:1px solid black; margin:3px; ">
-                @foreach($zcas[$area] as $i)
-                    {{ $i->zip_code }},
-                @endforeach
-            </div>
+    <div class="col-xs-4">
+        <h5> {{$area}} </h5>
+        <div style="background-color:lightgray; border:1px solid black; margin:3px; ">
+            @foreach($zcas[$area] as $i)
+            {{ $i->zip_code }},
+            @endforeach
         </div>
-        @if($x % 3 == 0)
-            </div>
-            <div class="row">
-        @endif
-        @php $x++ @endphp
+    </div>
+    @if($x % 3 == 0)
+</div>
+<div class="row">
+    @endif
+    @php $x++ @endphp
     @endforeach
