@@ -9,7 +9,7 @@
     });
 </script>
 <div class="content-page">
-    <div class="container-fluid">
+    <div class="container-fluid create_new_task">
         <div class="row">
             <div class="col-sm-12 col-lg-12">
                 <div class="card">

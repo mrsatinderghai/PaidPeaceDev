@@ -29,7 +29,7 @@ class AuthController extends Controller
      * @var string
      */
     
-     protected $redirectTo = 'work_order/schedule';
+     protected $redirectTo = 'home';
 
     
 

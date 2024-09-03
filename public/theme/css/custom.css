@@ -77,3 +77,102 @@ a.edit_btn svg {
     width: 35px;
     color: white;
 }
+
+/* service-pipeline-CSS_START */
+.sale_pipeline h1 {
+    font-size: 40px;
+    font-weight: 500;
+}
+.sale_pipeline {
+    padding: 20px;
+}
+.sale_pipeline .row {
+    padding: 20px 0;
+}
+.sale_pipeline h5 {
+    color: #fff;
+    font-size: 18px;
+    background: #0c2556;
+    padding: 10px 3px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: 500;
+}
+.create_new_task .col-sm-12, .col-sm-6 {
+    padding: 0;
+}
+
+/* Sharp_Mower-CSS_START */
+.Sharp_Mower .img-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.Sharp_Mower .jumbotron {
+    padding: 20px;
+}
+.Sharp_Mower a.btn.btn-primary {
+    margin: 11px 0px 0 0;
+}
+
+
+/* New_Work_Order-CSS_START */
+.New_Work_Order .card {
+    padding: 20px 20px 0;
+}
+.New_Work_Order .card-header {
+    padding: 0;
+}
+.Work_order .form-horizontal .form-group {
+    margin-right: 0px;
+    margin-left: 0;
+    padding: 0
+}
+ #datatable-1_length label {
+    padding: 0;
+    font-weight: 500;
+}
+table.dataTable>thead .sorting:after{
+    right:0;
+    top: 17px;
+}
+ .table thead th {
+    vertical-align: top;
+}
+ table.dataTable>thead .sorting:before{
+    top: 17px;
+}
+ .btn {
+    padding: 5px 20px;
+}
+.Work_order label {
+    font-weight: 500;
+}
+.form-inline {
+    align-items: end;
+}
+.row {
+    margin: 0 !important;
+    padding: 0 8px;
+}
+.modal-dialog {
+    max-width: 620px;
+}
+.modal.show .modal-dialog h4.modal-title {
+    padding: 10px 25px 0;
+}
+.modal.show .modal-dialog label {
+    padding-top: 20px;
+}
+button.close {
+    margin: 10px;
+}
+.Work_Order_Analyze .card-header {
+    padding: 20px 0 0;
+}
+.Work_order .col-md-2 {
+    padding: 0;
+}
+.submit_btn_align {
+    text-align: end;
+}

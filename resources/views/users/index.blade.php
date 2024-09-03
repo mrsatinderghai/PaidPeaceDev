@@ -33,10 +33,11 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <div class="col-sm-offset-3 col-sm-6">
+                                <div class="col-sm-3 label_display"></div>
+                                <div class="col-sm-offset-3 col-sm-6 submit_btn_align">
                                     {!! Form::submit('Add User', array('class' => 'btn btn-primary')) !!}
                                 </div>
-                            </div>
+                            </di>
 
                             {!! Form::close() !!}
                         </div>

@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('content')
 <div class="content-page">
-  <div class="container-fluid">
+  <div class="container-fluid Work_order">
     <div class="row">
       <div class="col-sm-12">
         <div class="card">
@@ -57,9 +57,6 @@
             <div class="table-responsive">
               <table id="datatable-1" class="table data-table table-striped table-bordered">
                 <thead>
-                  <th></th>
-                  <th></th>
-                  <th></th>
                   <th><a href="{{ url('/work_order/index/id') }}">WO Number</a></th>
                   <th><a href="{{ url('/work_order/index/customer_id') }}">Customer</a></th>
                   <th>Reason</th>
@@ -116,9 +113,6 @@
                   </tbody>
                   <tfoot>
                     <tr>
-                     <th></th>
-                     <th></th>
-                     <th></th>
                      <th><a href="{{ url('/work_order/index/id') }}">WO Number</a></th>
                      <th><a href="{{ url('/work_order/index/customer_id') }}">Customer</a></th>
                      <th>Reason</th>

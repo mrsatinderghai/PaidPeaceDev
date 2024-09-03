@@ -1,22 +1,24 @@
 @extends('layouts.master')
 @section('content')
 <div class="content-page">
-  <div class="container-fluid">
+  <div class="container-fluid Sharp_Mower">
     <div class="row">
       <div class="col-sm-12">
         <div class="card">
           <div class="jumbotron">
-            <img style="float: right; position: relative; height:45px;" class="img-responsive" src="{{ URL::asset($team->logo) }}" /><br />
-            <h1 style="position: relative; width: 75%">
-              &nbsp&nbsp{{ $team->name}}
+            <div class="img-flex">
+            <h1 style="position: relative; width: 100%">
+            {{ $team->name}}
             </h1>
+            <img style="float: right; position: relative; height:45px;" class="img-responsive" src="{{ URL::asset($team->logo) }}" /><br />
+            </div>           
             {{ $team->address1 }} <br />
             @if ($team->address2 != null)
             {{ $team->address2 }}
             @endif
             {{ $team->city }}, {{ $team->state }} {{ $team->zip }}<br />
             <a href="{{ url('team/'.$team->id.'/edit') }}" class="btn btn-primary"><i class="fa fa-pencil"></i> Edit</a>
-          </div>
+          </>
         </div>
         <div class="card">
 

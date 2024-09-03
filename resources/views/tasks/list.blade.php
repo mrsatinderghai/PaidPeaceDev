@@ -1,14 +1,20 @@
 <!-- Nav tabs -->
-<ul class="nav nav-tabs" role="tablist">
-  <li role="presentation" class="active"><a href="#hot" aria-controls="home" role="tab" data-toggle="tab">Hot</a></li>
-  <li role="presentation"><a href="#all" aria-controls="profile" role="tab" data-toggle="tab">All</a></li>
-  <li role="presentation"><a href="#team" aria-controls="messages" role="tab" data-toggle="tab">Team</a></li>
+<ul class="nav nav-tabs" id="myTab-1" role="tablist">
+  <li class="presentation">
+    <a class="nav-link active" id="hot-tab" data-toggle="tab" href="#hot" role="tab" aria-controls="hot" aria-selected="false">Hot</a>
+  </li>
+  <li role="presentation" class="active">
+    <a class="nav-link" id="all-tab" data-toggle="tab" href="#all" role="tab" aria-controls="all" aria-selected="true">All</a>
+  </li>
+  <li class="presentation">
+    <a class="nav-link" id="team-tab" data-toggle="tab" href="#team" role="tab" aria-controls="team" aria-selected="false">Team</a>
+  </li>
 </ul>
 
 
 <!-- Tab panes -->
 <div class="tab-content">
-  <div role="tabpanel" class="tab-pane active" id="all">
+  <div role="tabpanel" class="tab-pane show active" id="hot" aria-labelledby="hot-tab">
     <table class="table table-striped task-table">
 
       <!-- Table Headings -->
@@ -29,8 +35,8 @@
           <td class="table-text">
             <div><a href="{{ url('task/'.$task->id.'/edit') }}">{{ $task->name }}</a></div>
           </td>
-          <td @if (strtotime($task->due_date) <= strtotime('now')) class="danger"  @endif>
-            {{ $task->due_date }}
+          <td @if (strtotime($task->due_date) <= strtotime('now')) class="danger" @endif>
+              {{ $task->due_date }}
           </td>
           <td>
             {{ $task->assigned_to->name }}
@@ -57,7 +63,7 @@
     </table>
   </div>
 
-  <div role="tabpanel" class="tab-pane" id="hot">
+  <div role="tabpanel" class="tab-pane fade" id="all" aria-labelledby="all-tab">
     <table class="table table-striped task-table">
 
       <!-- Table Headings -->
@@ -78,8 +84,8 @@
           <td class="table-text">
             <div><a href="{{ url('task/'.$task->id.'/edit') }}">{{ $task->name }}</a></div>
           </td>
-          <td @if (strtotime($task->due_date) <= strtotime('now')) class="danger"  @endif>
-            {{ $task->due_date }}
+          <td @if (strtotime($task->due_date) <= strtotime('now')) class="danger" @endif>
+              {{ $task->due_date }}
           </td>
           <td>
             {{ $task->assigned_to->name }}
@@ -106,7 +112,7 @@
     </table>
   </div>
 
-  <div role="tabpanel" class="tab-pane" id="team">
+  <div role="tabpanel" class="tab-pane fade" id="team" aria-labelledby="team-tab">
     <table class="table table-striped task-table">
 
       <!-- Table Headings -->
@@ -127,8 +133,8 @@
           <td class="table-text">
             <div><a href="{{ url('task/'.$task->id.'/edit') }}">{{ $task->name }}</a></div>
           </td>
-          <td @if (strtotime($task->due_date) <= strtotime('now')) class="danger"  @endif>
-            {{ $task->due_date }}
+          <td @if (strtotime($task->due_date) <= strtotime('now')) class="danger" @endif>
+              {{ $task->due_date }}
           </td>
           <td>
             {{ $task->assigned_to->name }}
