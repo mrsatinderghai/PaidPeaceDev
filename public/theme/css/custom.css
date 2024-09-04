@@ -224,9 +224,6 @@ button.btn.btn-primary {
     margin-top: 15px;
 }
 
-
-
-
 .list {
     padding: 20px 0;
 }
@@ -332,4 +329,50 @@ button.btn.btn-primary {
 }
 .reset_passwrd h3.text-center {
     margin: 0 !important;
+}
+
+
+/* work-order */
+.Work_order .card-body {
+    padding: 20px 0;
+}
+.Work_order h2 {
+    font-size: 26px;
+}
+.Work_order h3 {
+    font-size: 16px;
+}
+.Work_order .scheduleBox h4 {
+    font-size: 15px;
+    text-align: center;
+}
+.Work_order .scheduleBox {
+    min-height: auto;
+    margin: 0px;
+    padding: 10px 0;
+}
+.Work_order .scheduleHeader {
+    padding: 20px 0 24px;
+}
+.Work_order .scheduleBox {
+    padding: 20px 0;
+}
+.Work_order .btn-info.btn-xs {
+    padding: 4px 12px;
+    margin-left: 10px;
+}
+form.unassign_box {
+    margin-top: 30px;
+}
+form.unassign_box select {
+    width: 82%;
+    padding: 5px;
+}
+.Work_order h3 {
+    font-size: 14px;
+}
+.Work_order textarea {
+    overflow: auto;
+    resize: vertical;
+    font-size: 14px;
 }

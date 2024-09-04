@@ -133,7 +133,7 @@
           <div class="tab-content" id="myTabContent-2">
 
            <div class="row">
-            <div class="col-xs-12">
+            <div class="col-xs-12 col-md-12">
               <a class="btn btn-sm btn-default" href="{{ url('work_order/schedule/' . $last_week) }}"><i class="fa fa-backward"></i></a>
               <i class="fa fa-calendar"></i>
               <a class="btn btn-sm btn-default" href="{{ url('work_order/schedule/' . $next_week) }}"><i class="fa fa-forward"></i></a>
@@ -158,7 +158,7 @@
                 <?php $count = 0; ?>
                 @foreach($dates as $date)
                 <div class="row scheduleHeader" @if (($count + 1) % 2 != 0) {{ 'style=background-color:aliceblue' }} @endif >
-                  <div class="col-xs-12">
+                  <div class="col-xs-12 col-md-12">
                     <form action="{{ url('date_note/save') }}" method="post">
                       {{ csrf_field() }}
                       <input type="hidden" value="{{ $truck->id }}" name="truck_id">
@@ -170,7 +170,7 @@
 
                     </form>
                     <a href="{{ route('work_order.truck_schedule', [$truck->id, $date]) }}"><h3>{{ $days_of_week[$count] }}, {{ $date }}</h3></a>
-                    <form action="{{ url('truck/assign_user_to_day') }}" method="POST">
+                    <form action="{{ url('truck/assign_user_to_day') }}" method="POST" class="unassign_box">
                       {{ csrf_field() }}
                       {!! Form::select('user_id', $assigned_to_select, $truck->user_by_date($date)) !!}
                       {!! Form::hidden('date', $date) !!}
