@@ -47,7 +47,7 @@
                       </div>
                     </div>
                     <div class="form-group" style="text-align: end;">
-                      <div class="col-sm-offset-3 col-sm-10">
+                      <div class="col-sm-offset-3 col-sm-9 remove_space">
                         @if (auth()->check())
                         @if (auth()->user()->isAdmin())
                         {!! Form::submit('Save', array('class' => 'btn btn-primary')) !!}

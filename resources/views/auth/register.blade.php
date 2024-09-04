@@ -14,10 +14,15 @@
     <link rel="stylesheet" href="{{ asset('public/theme/css/backend.css?v=1.0.0') }}">
     <link rel="stylesheet" href="{{ asset('public/theme/css/custom.css') }}">
     <style>
-    .text-secondary {
-    color: #292a2d !important;
-    font-weight: 600;
-}
+        .text-secondary {
+            color: #292a2d !important;
+            font-weight: 600;
+        }
+
+        span.help-block {
+            font-weight: 200;
+            color: red;
+        }
     </style>
 </head>
 
