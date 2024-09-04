@@ -23,7 +23,7 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <div class="col-sm-offset-3 col-sm-6">
+                                <div class="col-sm-offset-3 col-sm-9 add_btnn">
                                     {!! Form::submit('Add Role', array('class' => 'btn btn-primary')) !!}
                                 </div>
                             </div>

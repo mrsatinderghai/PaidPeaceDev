@@ -48,7 +48,7 @@
 		</div>
 
 		<div class="form-group">
-			<div class="col-sm-offset-4 col-sm-6">
+			<div class="col-sm-offset-4 col-sm-12 add_btnn">
 				{!! Form::submit('Add', array('class' => 'btn btn-primary')) !!}
 				{!! Form::close() !!}
 			</div>

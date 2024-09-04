@@ -3,7 +3,7 @@
 {!! Form::open(['route' => 'zipcodearea.store', 'class' => 'form-horizontal', 'method' => 'post']); !!}
 
 <div class="form-group">
-  {!! Form::label('zip_code', 'Zip Code', ['class' => 'col-xs-12 col-sm-1']) !!}
+  {!! Form::label('zip_code', 'Zip Code', ['class' => 'col-xs-12 col-sm-6']) !!}
   <div class="col-xs-4">
     {!! Form::text('zip_code', null, ['class' => 'form-control']) !!}
   </div>

@@ -13,6 +13,12 @@
     <link rel="stylesheet" href="{{ asset('public/theme/css/backend-plugin.min.css') }}">
     <link rel="stylesheet" href="{{ asset('public/theme/css/backend.css?v=1.0.0') }}">
     <link rel="stylesheet" href="{{ asset('public/theme/css/custom.css') }}">
+    <style>
+    .text-secondary {
+    color: #292a2d !important;
+    font-weight: 600;
+}
+    </style>
 </head>
 
 <body class=" ">
@@ -81,7 +87,7 @@
                                                 @endif
                                             </div>
                                         </div>
-                                        <div class="col-lg-12 mt-2">
+                                        <div class="col-lg-12 mt-2 remove_space">
                                             <div class="form-check form-check-inline">
                                                 <div class="custom-control custom-checkbox custom-control-inline mb-3">
                                                     <input type="checkbox" class="custom-control-input m-0" id="inlineCheckbox1">

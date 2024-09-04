@@ -13,7 +13,7 @@
 
 
 <div class="content-page">
-    <div class="container-fluid">
+    <div class="container-fluid timeframe">
         <div class="row">
             <div class="col-sm-12">
                 <div class="card">

@@ -15,30 +15,30 @@
 
 
 <div class="content-page">
-    <div class="container-fluid">
+    <div class="container-fluid payroll_report">
         <div class="row">
             <div class="col-sm-12">
                 <div class="card">
                     {!! Form::open(['route' => 'reports.finance.payroll']) !!}
-                    <div class="col-xs-12 col-md-3">
+                    <div class="col-xs-12 col-md-12">
                         <div class="form-group">
                             {!! Form::label('user_id', 'Employee') !!}
                             {!! Form::select('user_id', $team_member_select, null, ['class' => 'form-control']) !!}
                         </div>
                     </div>
-                    <div class="col-xs-12 col-md-3">
+                    <div class="col-xs-12 col-md-12">
                         <div class="form-group">
                             {!! Form::label('from_date', 'From') !!}
                             {!! Form::text('from_date', null, ['class' => 'form-control']) !!}
                         </div>
                     </div>
-                    <div class="col-xs-12 col-md-3">
+                    <div class="col-xs-12 col-md-12">
                         <div class="form-group">
                             {!! Form::label('to_date', 'To') !!}
                             {!! Form::text('to_date', null, ['class' => 'form-control']) !!}
                         </div>
                     </div>
-                    <div class="col-xs-12 col-md-3">
+                    <div class="col-xs-12 col-md-12">
                         <div class="form-group">
                             <button class="btn btn-primary" class="form-control">Submit</button>
                         </div>

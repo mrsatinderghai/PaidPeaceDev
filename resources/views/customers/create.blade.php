@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('content')
 <div class="content-page">
-    <div class="container-fluid">
+    <div class="container-fluid Add_Customers">
         <div class="row">
             <div class="col-sm-12">
                 <div class="card">

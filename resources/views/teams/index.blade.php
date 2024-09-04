@@ -2,7 +2,7 @@
 @section('content')
 
 <div class="content-page">
-    <div class="container-fluid">
+    <div class="container-fluid team_sec">
         <div class="row">
             <div class="col-sm-12">
                 <div class="card">
@@ -30,7 +30,7 @@
 
 
                             <div class="form-group">
-                                <div class="col-sm-offset-3 col-sm-6">
+                                <div class="col-sm-offset-3 col-sm-9 add_team">
                                     {!! Form::submit('Add Team', array('class' => 'btn btn-primary')) !!}
                                 </div>
                             </div>

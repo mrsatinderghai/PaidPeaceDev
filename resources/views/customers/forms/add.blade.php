@@ -75,9 +75,9 @@
   </div>
 </div>
 
-<div class="form-group">
-  {!! Form::label('hoa', 'HOA', ['class' => 'col-md-12']) !!}
-  <div class="col-md-12">
+<div class="form-group check_boxx">
+  {!! Form::label('hoa', 'HOA', ['class' => 'check_label']) !!}
+  <div class="check_tick">
     <?php
     $x = null;
     if ($customer->hoa == 1) {
@@ -88,9 +88,9 @@
   </div>
 </div>
 
-<div class="form-group">
-  {!! Form::label('is_tax_exempt', 'Tax Exempt', ['class' => 'col-md-12']) !!}
-  <div class="col-md-12">
+<div class="form-group check_boxx">
+  {!! Form::label('is_tax_exempt', 'Tax Exempt', ['class' => 'check_label']) !!}
+  <div class="check_tick">
     <?php
     $x = null;
     if ($customer->tax_exempt == 1) {
@@ -100,19 +100,19 @@
     {!! Form::checkbox('is_tax_exempt', 1, $x) !!}
   </div>
 
-  <div class="col-md-12">
+  <div class="col-md-4">
     {!! Form::text('tax_exempt_id', $customer->tax_exempt_id, ['class' => 'form-control', 'placeholder' => 'Tax Exempt ID']) !!}
   </div>
   
-  {!! Form::label('preferred_contact_method', 'Preferred Contact Method', ['class' => 'col-md-12']) !!}
-  <div class="col-md-12">
+  {!! Form::label('preferred_contact_method', 'Preferred Contact Method', ['class' => 'check_label']) !!}
+  <div class="col-md-5">
     {!! Form::select('preferred_contact_method',$customer->contact_methods, $customer->preferred_contact_method,  ['class' => 'form-control']) !!}
   </div>
 </div>
 
-<div class="form-group">
-  {!! Form::label('wants_follow_up_calls', 'Promotions', ['class' => 'col-md-12']) !!}
-  <div class="col-md-12">
+<div class="form-group check_boxx">
+  {!! Form::label('wants_follow_up_calls', 'Promotions', ['class' => 'check_label']) !!}
+  <div class="col-md-12 check_tick">
     <?php
     $x = null;
     if ($customer->wants_follow_up_calls == 1) {

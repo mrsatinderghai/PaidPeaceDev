@@ -10,10 +10,10 @@
 					<h1>Trucks</h1>
 				</div>
 				<div class="card">
-					<div class="col-xs-12 col-md-4">
+					<div class="col-xs-12 col-md-6 part_section">
 						@include('trucks.add')
 					</div>
-					<div class="col-xs-12 col-md-8">
+					<div class="col-xs-12 col-md-12">
 						@include('trucks.list')
 					</div>
 				</div>

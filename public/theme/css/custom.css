@@ -176,3 +176,160 @@ button.close {
 .submit_btn_align {
     text-align: end;
 }
+
+.form-group.check_boxx {
+    display: flex;
+    padding: 0 15px;
+    column-gap: 10px;
+    align-items: center;
+}
+.page-item.disabled .page-link {
+    color: #fff;
+    background-color: #0c2556;
+}
+.text-info {
+    font-size: 28px;
+    padding: 20px;
+}
+button.btn.btn-primary {
+    margin-left: 10px;
+}
+.text-success {
+    font-size: 20px;
+}
+.text-danger {
+    font-size: 20px;
+}
+
+
+.Add_Customers .form-horizontal .form-group label {
+    padding-top: 20px;
+}
+.Add_Customers .form-group {
+    margin: 0;
+}
+.Add_Customers input.btn.btn-primary {
+    margin-top: 14px;
+}
+.Add_Customers .check_tick input {
+    margin-top: 17px;
+} 
+.Add_Customers .card {
+    padding: 20px;
+}
+.Add_Customers .card-header.d-flex.justify-content-between {
+    padding: 0;
+} 
+#newCustomerModal .modal-body .form-group.check_boxx .check_tick input {
+    margin-top: 15px;
+}
+
+
+
+
+.list {
+    padding: 20px 0;
+}
+.form-inline {
+    align-items: end;
+    padding: 15px;
+}
+.panel-body form .form-group {
+    display: flex;
+}
+.part_section {
+    margin: 0 auto;
+    padding: 20px;
+}
+.add_btnn {
+    text-align: end;
+    padding: 0;
+}
+.payroll_report .card {
+    padding: 20px;
+}
+.payroll_report button.btn.btn-primary {
+    margin: 0;
+}
+.payroll_report h1.text-info {
+    padding: 0;
+}
+.payroll_report  h3.text-primary {
+    font-size: 24px;
+    padding: 10px 0;
+}
+.payroll_report  h4.text-secondary {
+    font-size: 18px;
+    padding: 0px 0 20px;
+}
+.payroll_report label {
+    color: #213446;
+    font-weight: 500;
+}
+.card.ledger_sect {
+    display: -webkit-box;
+    padding: 20px;
+}
+.timeframe .alert.alert-info {
+    margin: 0 15px 10px;
+}
+.timeframe h4.text-secondary {
+    padding: 15px;
+}
+.timeframe .alert.alert-info h3 {
+    font-size: 26px;
+}
+.timeframe .text-info small {
+    /* font-size: 20px; */
+    font-weight: 600;
+}
+.timeframe h1 {
+    font-size: 35px;
+}
+.part_head_sec {
+    padding: 20px;
+}
+.add_team {
+    text-align: end;
+    padding: 0;
+}
+.remove_space {
+    padding: 0;
+}
+.zip_code .form-group {
+    margin: 0;
+}
+.zip_code label {
+    padding: 0 !important;
+    margin-top: 13px;
+}
+.zip_code input.btn.btn-primary {
+    margin-top: 14px;
+}
+.zip_code .card {
+    padding: 20px 0;
+}
+.login_page {
+    padding: 40px 20px;
+}
+.auth-logo img {
+    height: 100px;
+}
+.login_page label {
+    color: #213446;
+    font-weight: 600;
+}
+.login_page .text-center {
+    font-size: 15px;
+}
+/* reset-Page-CSS */
+.reset_passwrd .form-group {
+    margin: 0 0 10px;
+    padding: 0;
+}
+.reset_passwrd button.btn.btn-primary.btn-block {
+    margin: 0;
+}
+.reset_passwrd h3.text-center {
+    margin: 0 !important;
+}
