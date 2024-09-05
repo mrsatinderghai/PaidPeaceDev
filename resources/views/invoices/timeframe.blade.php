@@ -15,13 +15,13 @@
 						<div class="col-xs-12 col-md-4">
 							<div class="form-group">
 								{!! Form::label('from_date', 'From') !!}
-								{!! Form::text('from_date', null, ['class' => 'form-control']) !!}
+								{!! Form::text('from_date', null, ['class' => 'form-control ml-2']) !!}
 							</div>
 						</div>
 						<div class="col-xs-12 col-md-4">
 							<div class="form-group">
 								{!! Form::label('to_date', 'To') !!}
-								{!! Form::text('to_date', null, ['class' => 'form-control']) !!}
+								{!! Form::text('to_date', null, ['class' => 'form-control ml-2']) !!}
 							</div>
 						</div>
 						<div class="col-xs-12 col-md-4">

@@ -229,7 +229,7 @@ button.btn.btn-primary {
 }
 .form-inline {
     align-items: end;
-    padding: 15px;
+    padding: 15px 0px;
 }
 .panel-body form .form-group {
     display: flex;
@@ -375,4 +375,48 @@ form.unassign_box select {
     overflow: auto;
     resize: vertical;
     font-size: 14px;
+}
+.Work_order label.search_work_order {
+    text-align: end;
+}
+.leftBar table {
+    width: 100%;
+}
+.scheduleBox .btn {
+    padding: 0px 8px;
+}
+.scheduleHeader textarea {
+    float: unset !important;
+    width: 82%;
+}
+.scheduleHeader form.unassign_box {
+    margin-top: 20px;
+}
+.content-page .Work_order .jumbotron {
+    padding: 20px 0px;
+    justify-content: center;
+    display: flex;
+}
+.content-page .Work_order .scheduleBox h4 {
+    font-size: 14px;
+    text-align: center;
+    flex-direction: column-reverse;
+    display: flex;
+    gap: 6px;
+}
+.content-page .Work_order .btn-info.btn-xs {
+    padding: 4px 8px;
+    margin-left: 10px;
+    float: right;
+}
+.tab-content .calender {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.Work_order .card .card-header {
+    margin: 0 auto;
+}
+.content-page .Work_order .card-body .scheduleBox {
+    margin-bottom: 50px !important;
 }

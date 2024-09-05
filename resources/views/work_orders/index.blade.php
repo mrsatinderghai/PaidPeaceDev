@@ -40,7 +40,7 @@
               <div class="col-xs-12 col-md-6">
                 {!! Form::open(['route' => 'work_order.search', 'class' => 'form-horizontal']) !!}
                 <div class="form-group d-flex">
-                  {!! Form::label('search_work_order', 'Search Work Order Number', ['class' => 'col-xs-12 col-sm-5']) !!}
+                  {!! Form::label('search_work_order', 'Search Work Order Number', ['class' => 'col-xs-12 col-sm-6 search_work_order']) !!}
                   <div class="col-xs-12 col-sm-3">
                    {!! Form::text('search_work_order', null, ['class' => 'form-control']) !!}
                  </div>

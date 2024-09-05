@@ -81,6 +81,53 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+    $(document).ready(function() {
+      var activeMenu = localStorage.getItem('activeMenu');
+
+      if (activeMenu) {
+
+        $('li.sidebar-layout').removeClass('active');
+        $('.sidebar-layout').removeClass('active');
+
+
+        $('a[data-menu="' + activeMenu + '"]').closest('li').addClass('active');
+        $('a[data-menu="' + activeMenu + '"]').closest('ul').addClass('show');
+        $('a[data-menu="' + activeMenu + '"]').closest('ul').closest('li').addClass('active');
+        $('#' + activeMenu).closest('.submenu').addClass('show');
+      }
+
+
+      $('.sidebar-layout a').click(function() {
+        var menuId = $(this).data('menu');
+
+        if (menuId) {
+          console.log('menuId',menuId);
+          localStorage.setItem('activeMenu', menuId);
+        } else {
+          console.log('NO Id');
+          localStorage.removeItem('activeMenu')
+        }
+      });
+    });
+  </script>
+
+
+
 </body>
 
 </html>

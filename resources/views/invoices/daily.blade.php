@@ -14,7 +14,7 @@
 							{!! Form::open(['route' => 'invoices.daily', 'class' => 'form-inline']) !!}
 							<div class="form-group">
 								{!! Form::label('report_date', 'Date') !!}
-								{!! Form::text('report_date', null, ['class' => 'form-control']) !!}
+								{!! Form::text('report_date', null, ['class' => 'form-control ml-2']) !!}
 							</div>
 							<div class="form-group">
 								<button class="btn btn-primary">Submit</button>

@@ -22,13 +22,13 @@
                         <div class="col-xs-12 col-md-4">
                             <div class="form-group">
                                 {!! Form::label('from_date', 'From') !!}
-                                {!! Form::text('from_date', null, ['class' => 'form-control']) !!}
+                                {!! Form::text('from_date', null, ['class' => 'form-control ml-2']) !!}
                             </div>
                         </div>
                         <div class="col-xs-12 col-md-4">
                             <div class="form-group">
                                 {!! Form::label('to_date', 'To') !!}
-                                {!! Form::text('to_date', null, ['class' => 'form-control']) !!}
+                                {!! Form::text('to_date', null, ['class' => 'form-control ml-2']) !!}
                             </div>
                         </div>
                         <div class="col-xs-12 col-md-4">
@@ -42,7 +42,7 @@
                 <div class="card">
                     <div class="col-xs-12">
                         <h1 class="text-info">Timeframe Finance Report <small style="float:right">{{ $from_date . " - " . $to_date }}</small></h1>
-                        <div class="alert alert-info">
+                        <div class="alert alert-info" style="justify-content: space-between;">
                             <h3>Total Invoices: <span style="float:right">{{ $invoices_count }}</span></h3>
                             <h3>Average Invoice Amount: <span style="float:right">${{ number_format($invoices_average, 2) }}</span></h3>
                         </div>
