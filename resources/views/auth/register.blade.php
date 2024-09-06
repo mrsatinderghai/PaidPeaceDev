@@ -96,7 +96,7 @@
                                             <div class="form-check form-check-inline">
                                                 <div class="custom-control custom-checkbox custom-control-inline mb-3">
                                                     <input type="checkbox" class="custom-control-input m-0" id="inlineCheckbox1">
-                                                    <label class="custom-control-label pl-2" for="inlineCheckbox1">I agree to the <a href="terms-of-service.html">Terms of Service </a> and <a href="privacy-policy.html">Privacy Policy</a></label>
+                                                    <label class="custom-control-label pl-2" for="inlineCheckbox1">I agree to the <a href="#">Terms of Service </a> and <a href="#">Privacy Policy</a></label>
                                                 </div>
                                             </div>
                                         </div>

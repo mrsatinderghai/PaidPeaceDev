@@ -120,7 +120,7 @@
           localStorage.setItem('activeMenu', menuId);
         } else {
           console.log('NO Id');
-          localStorage.removeItem('activeMenu')
+          localStorage.removeItem('activeMenu');
         }
       });
     });

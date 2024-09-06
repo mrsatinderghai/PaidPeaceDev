@@ -6,10 +6,8 @@
 			<div class="col-sm-12">
 				<div class="card">
 					<div class="col-xs-6">
-						<h1>{{ $title }}</h1>
+						<h4 class="ml-3 mt-2">{{ $title }}</h4>
 					</div>
-				</div>
-				<div class="card">
 					<div class="col-xs-12 col-md-12 list">
 						@include('invoices.list')
 					</div>

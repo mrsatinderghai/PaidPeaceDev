@@ -12,7 +12,7 @@
         <hr />
         <div class="card">
           <div class="col-xs-12">
-            <h1>Tasks</h1>
+            <h3 class="ml-2 my-2">Tasks</h3>
             @include('tasks.list')
           </div>
         </div>
@@ -22,3 +22,7 @@
 </div>
 
 @endsection
+
+<script>
+ localStorage.removeItem('activeMenu');
+</script>
