@@ -13,21 +13,21 @@
           <div class="card-body">
             <div class="table-responsive">
               <table id="datatable-1" class="table data-table table-striped table-bordered">
-              <thead>
-                    <th><a href="{{ url('/customer/index/last_name') }}">Last Name</a></th>
-                    <th><a href="{{ url('/customer/index/first_name') }}">First Name</a></th>
-                    <th>Address</th>
-                    <th>Address 2</th>
-                    <th><a href="{{ url('/customer/index/city') }}">City</a></th>
-                    <th><a href="{{ url('/customer/index/state') }}">State</a></th>
-                    <th>Zip</th>
-                    <th>Phone</th>
-                    <th>Email</th>
-                    <th><a href="{{ url('/customer/index/equipment_make') }}">Make</a></th>
-                    <th><a href="{{ url('/customer/index/equipment_model') }}">Model</a></th>
-                    <th></th>
-                    <th></th>
-                  </thead>
+                <thead>
+                  <th><a href="{{ url('/customer/index/last_name') }}">Last Name</a></th>
+                  <th><a href="{{ url('/customer/index/first_name') }}">First Name</a></th>
+                  <th>Address</th>
+                  <th>Address 2</th>
+                  <th><a href="{{ url('/customer/index/city') }}">City</a></th>
+                  <th><a href="{{ url('/customer/index/state') }}">State</a></th>
+                  <th>Zip</th>
+                  <th>Phone</th>
+                  <th>Email</th>
+                  <th><a href="{{ url('/customer/index/equipment_make') }}">Make</a></th>
+                  <th><a href="{{ url('/customer/index/equipment_model') }}">Model</a></th>
+                  <th>Edit</th>
+                  <th>Delete</th>
+                </thead>
                 <tbody>
                   @foreach($customers as $customer)
                   <tr class="clickable-row" data-href="{{ url('/customer/'.$customer->id.'/edit/') }}">
@@ -60,7 +60,7 @@
                 </tbody>
                 <tfoot>
                   <tr>
-                  <th><a href="{{ url('/customer/index/last_name') }}">Last Name</a></th>
+                    <th><a href="{{ url('/customer/index/last_name') }}">Last Name</a></th>
                     <th><a href="{{ url('/customer/index/first_name') }}">First Name</a></th>
                     <th>Address</th>
                     <th>Address 2</th>
@@ -71,8 +71,8 @@
                     <th>Email</th>
                     <th><a href="{{ url('/customer/index/equipment_make') }}">Make</a></th>
                     <th><a href="{{ url('/customer/index/equipment_model') }}">Model</a></th>
-                    <th></th>
-                    <th></th>
+                    <th>Edit</th>
+                  <th>Delete</th>
                   </tr>
                 </tfoot>
               </table>

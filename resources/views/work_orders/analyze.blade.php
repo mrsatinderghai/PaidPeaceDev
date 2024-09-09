@@ -1,22 +1,27 @@
 @extends('layouts.master')
 @section('content')
+<style type="text/css">
+    .header-title {
+    margin-left: 12px;
+}
+</style>
 <div class="content-page">
     <div class="container-fluid Work_Order_Analyze">
         <div class="row">
             <div class="col-sm-12">
                 <div class="card">
 
-
+    <div class="card-header d-flex justify-content-between">
+                        <div class="header-title">
+                            <h4 class="card-title">Work Order Analyze</h4>
+                        </div>
+                    </div>
 
                     <div class="tab-content" id="myTabContent-2">
 
                         <div class="row">
                             <div class="col-md-6">
-                                <div class="card-header d-flex justify-content-between">
-                                    <div class="header-title">
-                                        <h4 class="card-title">Work Order Analyze</h4>
-                                    </div>
-                                </div>
+                              
                             </div>
                             <div class="col-md-6 mt-2">
                                 {!! Form::open(['route' => 'work_order.analyze', 'class' => 'form-inline']) !!}
