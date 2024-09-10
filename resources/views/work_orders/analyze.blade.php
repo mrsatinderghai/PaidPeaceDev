@@ -17,29 +17,29 @@
                         </div>
                     </div>
 
-                    <div class="tab-content" id="myTabContent-2">
+                    <div class="tab-content work_order_analyze" id="myTabContent-2">
 
                         <div class="row">
                             <div class="col-md-6">
                               
                             </div>
-                            <div class="col-md-6 mt-2">
+                            <div class="col-md-6 mt-2 d-flex justify-content-end">
                                 {!! Form::open(['route' => 'work_order.analyze', 'class' => 'form-inline']) !!}
-                                <div class="col-xs-12 col-md-4">
+                                <div class="col-xs-12 col-md-5">
                                     <div class="form-group">
                                         {!! Form::label('from_date', 'From') !!}
-                                        {!! Form::text('from_date', null, ['class' => 'form-control']) !!}
+                                        {!! Form::date('from_date', null, ['class' => 'form-control']) !!}
                                     </div>
                                 </div>
-                                <div class="col-xs-12 col-md-4">
+                                <div class="col-xs-12 col-md-5">
                                     <div class="form-group">
                                         {!! Form::label('to_date', 'To') !!}
-                                        {!! Form::text('to_date', null, ['class' => 'form-control']) !!}
+                                        {!! Form::date('to_date', null, ['class' => 'form-control']) !!}
                                     </div>
                                 </div>
-                                <div class="col-xs-12 col-md-4">
+                                <div class="col-xs-12 col-md-2">
                                     <div class="form-group">
-                                        <button class="btn btn-primary">Filter</button>
+                                        <button class="btn btn-primary m-0">Filter</button>
                                     </div>
                                 </div>
                                 {!! Form::close() !!}

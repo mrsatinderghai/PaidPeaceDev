@@ -4,32 +4,36 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-sm-12">
+				
 				<div class="card">
-						<div class="col-xs-6">
-							<h1>{{ $title }}</h1>
+					<div class="card-header d-flex justify-content-between">
+						<div class="header-title">
+							<h4 class="card-title">{{ $title }}</h4>
 						</div>
 					</div>
-					<div class="card">
+
+					
+					
+					<div class="col-xs-12 col-md-12">
+
 						<div class="col-xs-12">
 							{!! Form::open(['route' => 'invoices.daily', 'class' => 'form-inline']) !!}
 							<div class="form-group">
 								{!! Form::label('report_date', 'Date') !!}
-								{!! Form::text('report_date', null, ['class' => 'form-control ml-2']) !!}
+								{!! Form::date('report_date', null, ['class' => 'form-control ml-2']) !!}
 							</div>
 							<div class="form-group">
 								<button class="btn btn-primary">Submit</button>
 							</div>
 							{!! Form::close() !!}
 						</div>
-						
-						<div class="col-xs-12 col-md-12">
-							@include('invoices.list')
-						</div>
+						@include('invoices.list')
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+</div>
 </div>
 @endsection
 
@@ -43,49 +47,49 @@
 		serverSide: true,
 		ajax: ajaxUrl,
 		columns: [{
-				data: 'number',
-				name: 'number'
-			},
-			{
-				data: 'customer',
-				name: 'customer',
-				orderable: false,
-				searchable: false
-			},
-			{
-				data: 'created_at',
-				name: 'created_at'
-			},
-			{
-				data: 'status',
-				name: 'status'
-			},
-			{
-				data: 'amount',
-				name: 'amount'
-			},
-			{
-				data: 'view',
-				name: 'view',
-				orderable: false,
-				searchable: false
-			},
-			{
-				data: 'checkout',
-				name: 'checkout',
-				orderable: false,
-				searchable: false
-			},
-			{
-				data: 'delete',
-				name: 'delete',
-				orderable: false,
-				searchable: false
-			}
+			data: 'number',
+			name: 'number'
+		},
+		{
+			data: 'customer',
+			name: 'customer',
+			orderable: false,
+			searchable: false
+		},
+		{
+			data: 'created_at',
+			name: 'created_at'
+		},
+		{
+			data: 'status',
+			name: 'status'
+		},
+		{
+			data: 'amount',
+			name: 'amount'
+		},
+		{
+			data: 'view',
+			name: 'view',
+			orderable: false,
+			searchable: false
+		},
+		{
+			data: 'checkout',
+			name: 'checkout',
+			orderable: false,
+			searchable: false
+		},
+		{
+			data: 'delete',
+			name: 'delete',
+			orderable: false,
+			searchable: false
+		}
 		],
 		"order": [
 			[2, "desc"]
-		]
+			]
 	})
 </script>
 

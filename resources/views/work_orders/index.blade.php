@@ -17,7 +17,7 @@
             <div class="row">
 
 
-              <div class="col-xs-12 col-md-6">
+              <div class="col-xs-12 col-md-6 p-0">
                 {!! Form::open(['route' => 'work_order.filter', 'class' => 'form-horizontal']) !!}
                 <div class="form-group d-flex">
                  
@@ -41,10 +41,10 @@
                 {!! Form::open(['route' => 'work_order.search', 'class' => 'form-horizontal']) !!}
                 <div class="form-group d-flex">
                   {!! Form::label('search_work_order', 'Search Work Order Number', ['class' => 'col-xs-12 col-sm-6 search_work_order']) !!}
-                  <div class="col-xs-12 col-sm-3">
+                  <div class="col-xs-12 col-sm-4">
                    {!! Form::text('search_work_order', null, ['class' => 'form-control']) !!}
                  </div>
-                 <div class="col-xs-12 col-sm-3">
+                 <div class="col-xs-12 col-sm-2">
                   {!! Form::submit('Search', array('class' => 'btn btn-primary')) !!}
                   {!! Form::close() !!}
                 </div>

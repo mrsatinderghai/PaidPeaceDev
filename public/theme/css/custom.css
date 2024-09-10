@@ -414,9 +414,61 @@ form.unassign_box select {
     display: flex;
     align-items: center;
 }
-.Work_order .card .card-header {
+/* .Work_order .card .card-header {
     margin: 0 auto;
-}
+} */
 .content-page .Work_order .card-body .scheduleBox {
     margin-bottom: 50px !important;
+}
+.Work_order .form-horizontal .form-group {
+    align-items: center;
+}
+.Work_order label {
+    margin: 0px;
+}
+.Work_Order_Analyze .form-inline .form-control {
+    width: 100%;
+}
+/* custom css */
+.part_section .form-horizontal .control-label {
+    text-align: left;
+}
+.part_section form .add_btnn {
+    padding: 15px;
+}
+.scheduleWorkorder.New_Work_Order .card-header {
+    padding: 20px 15px 0px 6px;
+}
+.content-page .Work_order .jumbotron {
+    height: 103px;
+}
+.Work_order .jumbotron h2 {
+    overflow-y: auto;
+}
+.Work_order .card .card-header {
+    padding: 20px 10px;
+}
+table.dataTable>thead .sorting:after {
+    right: 2px !important;
+}
+table.dataTable>thead .sorting:before {
+    right: 15px;
+}
+.work_order_analyze .card-body {
+    padding: 10px;
+}
+.table-responsive .dataTables_info {
+    padding: 20px 0 20px 0px;
+}
+.table-responsive .dataTables_paginate .pagination {
+    padding: 20px 0px 20px 0;
+}
+.form-inline {
+    justify-content: end;
+}
+.table-responsive form.delete {
+    margin: 0px;
+}
+.updateStopOrdersBTN {
+    margin: 0px 20px 20px;
 }

@@ -1,9 +1,8 @@
 @extends('layouts.master')
 @section('content')
-
 <script>
-  $(function()
-  {
+  jQuery.noConflict();
+        jQuery(document).ready(function($) {
     $( "#appointment_date" ).datepicker({ dateFormat: 'yy-mm-dd' });
 
     var customers = [<?php
@@ -42,7 +41,7 @@
 </div><!-- /.modal -->
 <!-- end modal -->
 <div class="content-page">
-  <div class="container-fluid New_Work_Order">
+  <div class="container-fluid scheduleWorkorder New_Work_Order">
     <div class="row">
       <div class="col-sm-12 col-lg-12">
         <div class="card">

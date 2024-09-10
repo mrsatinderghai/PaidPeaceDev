@@ -28,7 +28,7 @@
 
             {!! Form::open(['route' => 'work_order.update_stop_orders']) !!}
             @if(Auth::user()->has_role('Admin'))
-            {!! Form::submit('Update Stop Orders', ['class' => 'btn btn-primary']) !!}
+            {!! Form::submit('Update Stop Orders', ['class' => 'btn btn-primary updateStopOrdersBTN']) !!}
             @endif
             <div class="row">
               <div class="col-xs-12 col-sm-4">

@@ -123,12 +123,12 @@ class TaskController extends Controller
         $user = User::findOrFail($request->assigned_to_user_id);
 
 
-        // Mail::send('emails.update', ['item' => $new_task, 'notes' => array()], function ($m) use ($user, $new_task) {
+        Mail::send('emails.update', ['item' => $new_task, 'notes' => array()], function ($m) use ($user, $new_task) {
 
-        //     $m->from('noreply@jexly.net', 'Jexly');
+            $m->from('noreply@jexly.net', 'Jexly');
 
-        //     $m->to($user->email, $user->name)->subject('Jexly - New Task - '.$new_task->name);
-        // });
+            $m->to($user->email, $user->name)->subject('Jexly - New Task - '.$new_task->name);
+        });
 
         // return Redirect::back();
         return redirect('task');

@@ -17,23 +17,23 @@
         <div class="row">
             <div class="col-sm-12">
                 <div class="card">
-                    <div class="col-xs-12">
+                    <div class="col-xs-12 col-md-12 d-flex justify-content-end">
                         {!! Form::open(['route' => 'reports.finance.timeframe', 'class' => 'form-inline']) !!}
-                        <div class="col-xs-12 col-md-4">
+                        <div class="col-xs-12 col-md-5">
                             <div class="form-group">
                                 {!! Form::label('from_date', 'From') !!}
-                                {!! Form::text('from_date', null, ['class' => 'form-control ml-2']) !!}
+                                {!! Form::date('from_date', null, ['class' => 'form-control ml-2']) !!}
                             </div>
                         </div>
-                        <div class="col-xs-12 col-md-4">
+                        <div class="col-xs-12 col-md-5">
                             <div class="form-group">
                                 {!! Form::label('to_date', 'To') !!}
-                                {!! Form::text('to_date', null, ['class' => 'form-control ml-2']) !!}
+                                {!! Form::date('to_date', null, ['class' => 'form-control ml-2']) !!}
                             </div>
                         </div>
-                        <div class="col-xs-12 col-md-4">
+                        <div class="col-xs-12 col-md-2">
                             <div class="form-group">
-                                <button class="btn btn-primary" class="form-control">Submit</button>
+                                <button class="btn btn-primary m-0" class="form-control">Submit</button>
                             </div>
                         </div>
                         {!! Form::close() !!}

@@ -3,12 +3,31 @@
 <div class="content-page">
 	<div class="container-fluid">
 		<div class="row">
+
+			<div class="col-xs-12 col-md-12 add-task-section-area">
+				@include('tasks.add')
+			</div>
+
 			<div class="col-sm-12">
+
+
+
 				<div class="card">
-					<div class="card-header d-flex justify-content-between">
-						<div class="header-title">
+
+
+					<div class="card-header d-flex justify-content-between" bis_skin_checked="1">
+						<div class="header-title" bis_skin_checked="1">
 							<h4 class="card-title">Tasks</h4>
 						</div>
+
+						<div class="col-xs-1" bis_skin_checked="1">
+							<!-- Button trigger modal -->
+							<button type="button" class="btn btn-primary add-task-section-btn">
+								Add New
+							</button>
+						</div>
+
+
 					</div>
 
 
@@ -223,4 +242,26 @@
 		</div>
 	</div>
 </div>
+
+<script>
+	document.addEventListener('DOMContentLoaded', function() {
+    const taskSection = document.querySelector('.add-task-section-area');
+    const addTaskButton = document.querySelector('.add-task-section-btn');
+    const hideTaskButton = document.querySelector('.hide-task-section-btn'); 
+
+    taskSection.style.display = 'none';
+
+    addTaskButton.addEventListener('click', function() {
+        taskSection.style.display = 'block'; 
+        addTaskButton.style.display = 'none'; 
+    });
+
+
+    hideTaskButton.addEventListener('click', function() {
+        taskSection.style.display = 'none'; 
+        addTaskButton.style.display = 'block'; 
+    });
+});
+
+</script>
 @endsection

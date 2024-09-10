@@ -4,12 +4,15 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-sm-12">
+				
 				<div class="card">
-					<div class="col-xs-6">
-						<h1>{{ $title }}</h1>
-					</div>
-				</div>
-				<div class="card">
+
+							 <div class="card-header d-flex justify-content-between">
+            <div class="header-title">
+              <h4 class="card-title">{{ $title }}</h4>
+            </div>
+          </div>
+
 					<div class="col-xs-12 col-md-12 list">
 						@include('invoices.send_list')
 					</div>

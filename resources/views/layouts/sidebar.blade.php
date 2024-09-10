@@ -3,7 +3,7 @@
         <a href="{{url('/home')}}" class="header-logo">
             <img src="{{ asset('/public/theme/images/sharpmower.jpg')}}" class="img-fluid rounded-normal light-logo" alt="logo">
             <img src="{{ asset('/public/theme/images/logo-dark.png')}}" class="img-fluid rounded-normal d-none sidebar-light-img" alt="logo">
-            <span>SharpMower</span>
+            <span class="sharp_mower">SharpMower</span>
         </a>
         <div class="side-menu-bt-sidebar-1">
             <svg xmlns="http://www.w3.org/2000/svg" class="text-light wrapper-menu" width="30" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -21,7 +21,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
                             </svg>
                         </i>
-                        <span class="ml-2">Dashboard</span>
+                        <span class="ml-2 dashboard_section">Dashboard</span>
                         <p class="mb-0 w-10 badge badge-pill badge-primary">6</p>
                     </a>
                 </li>
@@ -50,7 +50,7 @@
                                 </i><span class="">TaskListing</span>
                             </a>
                         </li>
-                        <li class=" sidebar-layout {{ request()->is('task/create') ? 'active' : '' }}">
+                        <!-- <li class=" sidebar-layout {{ request()->is('task/create') ? 'active' : '' }}">
                             <a href="{{route('task.create')}}" class="svg-icon">
                                 <i class="">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
@@ -58,7 +58,7 @@
                                     </svg>
                                 </i><span class="">Task Add</span>
                             </a>
-                        </li>
+                        </li> -->
 
 
                     </ul>

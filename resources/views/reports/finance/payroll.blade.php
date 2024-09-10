@@ -29,13 +29,13 @@
                     <div class="col-xs-12 col-md-12">
                         <div class="form-group">
                             {!! Form::label('from_date', 'From') !!}
-                            {!! Form::text('from_date', null, ['class' => 'form-control']) !!}
+                            {!! Form::date('from_date', null, ['class' => 'form-control']) !!}
                         </div>
                     </div>
                     <div class="col-xs-12 col-md-12">
                         <div class="form-group">
                             {!! Form::label('to_date', 'To') !!}
-                            {!! Form::text('to_date', null, ['class' => 'form-control']) !!}
+                            {!! Form::date('to_date', null, ['class' => 'form-control']) !!}
                         </div>
                     </div>
                     <div class="col-xs-12 col-md-12">
