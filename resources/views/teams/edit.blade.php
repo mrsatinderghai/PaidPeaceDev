@@ -13,7 +13,7 @@
             @include('common.errors')
             <div class="panel-body">
               <!-- New Team Form -->
-              {!! Form::model($team, array('route' => array('team.update', $team->id), 'method' => 'PATCH', 'class' => 'form-horizontal', 'files' => 'true')) !!}
+              {!! Form::model($team, array('route' => array('team.update', $team->id), 'method' => 'PATCH', 'class' => 'form-horizontal team-edit-form', 'files' => 'true')) !!}
 
               <div class="form-group">
                 {!! Form::label('name', 'Team Name', array('class' => 'col-sm-3 control-label')) !!}
@@ -32,19 +32,19 @@
               </div>
 
               <div class="form-group">
-                {!! Form::label('address1', 'Address', ['class' => 'col-xs-12 col-sm-1']) !!}
-                <div class="col-xs-12 col-sm-5">
+                {!! Form::label('address1', 'Address', ['class' => 'col-xs-12 col-sm-2']) !!}
+                <div class="col-xs-12 col-sm-4">
                   {!! Form::text('address1', $team->address1, ['class' => 'form-control']) !!}
                 </div>
-                {!! Form::label('address2', 'Address 2', ['class' => 'col-xs-12 col-sm-1']) !!}
-                <div class="col-xs-12 col-sm-5">
+                {!! Form::label('address2', 'Address 2', ['class' => 'col-xs-12 col-sm-2']) !!}
+                <div class="col-xs-12 col-sm-4">
                   {!! Form::text('address2', $team->address2, ['class' => 'form-control']) !!}
                 </div>
               </div>
 
               <div class="form-group">
-                {!! Form::label('city', 'City', ['class' => 'col-xs-12 col-sm-1']) !!}
-                <div class="col-xs-12 col-sm-5">
+                {!! Form::label('city', 'City', ['class' => 'col-xs-12 col-sm-2']) !!}
+                <div class="col-xs-12 col-sm-4">
                   {!! Form::text('city', $team->city, ['class' => 'form-control']) !!}
                 </div>
                 {!! Form::label('state', 'State', ['class' => 'col-xs-12 col-sm-1']) !!}

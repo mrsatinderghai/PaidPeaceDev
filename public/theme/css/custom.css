@@ -33,10 +33,10 @@
 }
 
 
-.form-horizontal .form-group {
+/* .form-horizontal .form-group {
     margin-right: -15px;
     margin-left: -15px;
-}
+} */
 
 .form-group {
     margin-bottom: 15px;
@@ -471,4 +471,51 @@ table.dataTable>thead .sorting:before {
 }
 .updateStopOrdersBTN {
     margin: 0px 20px 20px;
+}
+
+
+
+.listing_details {
+    padding: 25px;
+}
+
+.listing_details h3 {
+    color: #fff!important;
+    background-color: #f42b3d!important;
+    width: max-content;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+.work-order-modal .modal-header .close {
+    margin: 0px;
+    padding: 0 5px;
+    border: 1px solid;
+}
+.work-order-modal h4.modal-title {
+    padding: 0px;
+}
+.Work_order .scheduleBox {
+    padding: 20px 0;
+    height: 140px;
+    overflow-y: auto;
+}
+
+.work_order_plaque {
+    margin-top: 5px;
+    height: auto !important;
+    width: 100% !important;
+}
+
+.leftbar_plaque .work_order_plaque {
+    margin: 10px 0;
+}
+
+.team-edit-form div.form-group label{
+    text-align: end;
+}
+
+.leftbar_plaque {
+    width: 36.5%;
 }

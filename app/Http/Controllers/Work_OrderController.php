@@ -125,9 +125,20 @@ class Work_OrderController extends Controller
       }
 
       $assigned_to_select = array();
-      $team_members = Auth::user()->team->members;
-      foreach($team_members as $team_member) {
-        $assigned_to_select[$team_member->id] = $team_member->name;
+     // $team_members = Auth::user()->team->members;
+
+      $user = Auth::user();
+      if ($user->team) {
+        $team_members = $user->team->members;
+      } else {
+        $team_members = [];
+      }
+
+
+      if(!empty($team_members)){
+        foreach($team_members as $team_member) {
+          $assigned_to_select[$team_member->id] = $team_member->name;
+        }
       }
 
       session(['from' => $request->path()]);

@@ -93,14 +93,7 @@
             <!-- <h3>Work Orders  <a href="#" class="btn btn-info btn-xs" id="newWObtn"><i class="fa fa-plus"></i></a></h3> -->
             @include('common.errors')
             <div class="leftBar">
-              <ul style="max-height: 500px;overflow-y: scroll;">
-                @foreach($work_orders_left as $y)
-                <li>
-                  {!! $y->plaque() !!}
-                </li>
-                @include('work_orders.modal')
-                @endforeach
-              </ul>
+              
 
               <table cellpadding=3 cellspacing=3 border=1px solid black; style="height: 150px;">
                 <tr height="30px">
@@ -137,6 +130,16 @@
                   </td>
                 </tr>
               </table>
+            </div>
+            <div class="leftbar_plaque">
+            <ul>
+                @foreach($work_orders_left as $y)
+                <li>
+                  {!! $y->plaque() !!}
+                </li>
+                @include('work_orders.modal')
+                @endforeach
+              </ul>
             </div>
           </div>
         </div>
