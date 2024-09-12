@@ -57,6 +57,9 @@
             <div class="table-responsive">
               <table id="datatable-1" class="table data-table table-striped table-bordered">
                 <thead>
+                  <th>Edit</th>
+                  <th>Action</th>
+                  <th>Delete</th>
                   <th><a href="{{ url('/work_order/index/id') }}">WO Number</a></th>
                   <th><a href="{{ url('/work_order/index/customer_id') }}">Customer</a></th>
                   <th>Reason</th>
