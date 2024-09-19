@@ -15,7 +15,7 @@ class AdminMW
      */
     public function handle($request, Closure $next)
     {
-        if ($request->user()->has_role('Global Admin') OR $request->user()->has_role('Admin') OR $request->user()->is_admin)
+        if ($request->user()->hasRole('Global Admin') OR $request->user()->hasRole('Admin') OR $request->user()->is_admin)
         {
             return $next($request);
         }

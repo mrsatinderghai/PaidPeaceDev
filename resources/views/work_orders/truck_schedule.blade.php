@@ -27,7 +27,7 @@
           <div class="card-body">
 
             {!! Form::open(['route' => 'work_order.update_stop_orders']) !!}
-            @if(Auth::user()->has_role('Admin'))
+            @if(Auth::user()->hasRole('Admin'))
             {!! Form::submit('Update Stop Orders', ['class' => 'btn btn-primary updateStopOrdersBTN']) !!}
             @endif
             <div class="row">

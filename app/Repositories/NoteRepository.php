@@ -2,7 +2,7 @@
 
 namespace App\Repositories;
 
-use App\Note;
+use App\Models\Note;
 
 class NoteRepository
 {

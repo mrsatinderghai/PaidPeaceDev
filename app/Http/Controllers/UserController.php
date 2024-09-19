@@ -9,7 +9,7 @@ use App\Http\Requests;
 use App\Repositories\UserRepository;
 use App\Repositories\TeamRepository;
 use App\Repositories\RoleRepository;
-use App\User;
+use App\Models\User;
 use Auth;
 use Illuminate\Support\Facades\Redirect;
 use Hash;
@@ -111,7 +111,7 @@ class UserController extends Controller
   public function edit($id)
   {
     $user = User::findOrFail($id);
-    $this->authorize('edit', $user);
+    // $this->authorize('edit', $user);
     return view('users.edit', ['user' => $user]);
   }
 
@@ -125,7 +125,7 @@ class UserController extends Controller
   public function update(Request $request, $id)
   {
     $user = User::findOrFail($id);
-    $this->authorize('edit', $user);
+    // $this->authorize('edit', $user);
     $this->validate($request, [
       'name' => 'required|max:255',
       'email' => 'required|email|max:255',
@@ -167,8 +167,15 @@ class UserController extends Controller
 
   public function update_roles(Request $request)
   {
+    
     $user = User::findOrFail($request->user_id);
     $roles = $request->roles;
+    $AuthTeam = Auth::user()->team_id;
+
+    $user = User::findOrFail($request->user_id);
+    $user->team_id = $AuthTeam;
+    $user->save();
+
     $user->roles()->detach();
     if ($roles)
     {

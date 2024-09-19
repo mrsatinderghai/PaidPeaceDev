@@ -10,7 +10,7 @@
             <h1 style="position: relative; width: 100%">
             {{ $team->name}}
             </h1>
-            <img style="float: right; position: relative; height:45px;" class="img-responsive" src="{{ URL::asset($team->logo) }}" /><br />
+            <img style="float: right; position: relative; height:45px;" class="img-responsive" src="{{ url($team->logo) }}" /><br />
             </div>           
             {{ $team->address1 }} <br />
             @if ($team->address2 != null)

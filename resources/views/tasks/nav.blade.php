@@ -6,8 +6,8 @@
 	}
 </style>
 
-<i class="fa fa-tasks fa-3x"></i><br/>
-<a href="{{ url('/task/hot') }}" class="nav_link">Hot Tasks</a><br/>
-<a href="{{ url('/task') }}" class="nav_link">My Tasks</a><br/>
-<a href="{{ url('/task/team') }}" class="nav_link">Team Tasks</a><br/>
+<!-- <i class="fa fa-tasks fa-3x"></i><br/> -->
+<a href="{{ url('/task/hot') }}" class="nav_link btn btn-primary">Hot Tasks</a><br/>
+<a href="{{ url('/task') }}" class="nav_link btn btn-primary">My Tasks</a><br/>
+<a href="{{ url('/task/team') }}" class="nav_link btn btn-primary">Team Tasks</a><br/>
 <!--<a href="{{ url('/task/project') }}" class="nav_link">Project View</a><br/>-->

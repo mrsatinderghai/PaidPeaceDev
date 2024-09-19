@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Repositories\CompanyRepository;
-use App\Company;
+use App\Models\Company;
 use App\Repositories\NoteRepository;
 use App\Repositories\TaskRepository;
 use App\Repositories\ContactRepository;
@@ -128,7 +128,7 @@ class CompanyController extends Controller
      */
     public function destroy(Request $request, Company $company)
     {
-        $this->authorize('destroy', $company);
+        // $this->authorize('destroy', $company);
         $company->delete();
         return Redirect::back();
     }

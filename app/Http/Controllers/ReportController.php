@@ -6,13 +6,13 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
-use App\Transaction;
-use App\Invoice;
+use App\Models\Transaction;
+use App\Models\Invoice;
 use Carbon\Carbon;
-use App\Truck;
-use App\User;
+use App\Models\Truck;
+use App\Models\User;
 use Auth;
-use App\Work_Order;
+use App\Models\Work_Order;
 
 class ReportController extends Controller
 {

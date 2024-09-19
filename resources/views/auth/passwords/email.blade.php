@@ -8,11 +8,11 @@
     <title>{{ config('app.name', 'Datum | CRM Admin Dashboard Template') }}</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="{{ asset('public/theme/images/favicon.ico') }}">
+    <link rel="shortcut icon" href="{{ url('public/theme/images/favicon.ico') }}">
 
-    <link rel="stylesheet" href="{{ asset('public/theme/css/backend-plugin.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('public/theme/css/backend.css?v=1.0.0') }}">
-    <link rel="stylesheet" href="{{ asset('public/theme/css/custom.css') }}">
+    <link rel="stylesheet" href="{{ url('public/theme/css/backend-plugin.min.css') }}">
+    <link rel="stylesheet" href="{{ url('public/theme/css/backend.css?v=1.0.0') }}">
+    <link rel="stylesheet" href="{{ url('public/theme/css/custom.css') }}">
     <style>
         .text-secondary {
     color: #0e0f0f !important;
@@ -42,7 +42,7 @@
                         <div class="card p-5">
                             <div class="card-body">
                                 <div class="auth-logo">
-                                    <img src="{{ asset('/public/theme/images/sharpmower.jpg')}}" class="img-fluid rounded-normal" alt="logo">
+                                    <img src="{{ url('/public/theme/images/sharpmower.jpg')}}" class="img-fluid rounded-normal" alt="logo">
                                 </div>
                                 <h3 class="mb-3 text-center">Reset Password</h3>
                                 <p class="text-center small text-secondary mb-3">You can reset your password here</p>
@@ -73,19 +73,19 @@
     </div>
 
 
-    <script src="{{ asset('public/theme/js/backend-bundle.min.js') }}"></script>
-    <script src="{{ asset('public/theme/js/customizer.js') }}"></script>
-    <script src="{{ asset('public/theme/js/sidebar.js') }}"></script>
-    <script src="{{ asset('public/theme/js/flex-tree.min.js') }}"></script>
-    <script src="{{ asset('public/theme/js/tree.js') }}"></script>
-    <script src="{{ asset('public/theme/js/table-treeview.js') }}"></script>
-    <script src="{{ asset('public/theme/js/sweetalert.js') }}"></script>
-    <script src="{{ asset('public/theme/js/vector-map-custom.js') }}"></script>
-    <script src="{{ asset('public/theme/js/chart-custom.js') }}"></script>
-    <script src="{{ asset('public/theme/js/charts/01.js') }}"></script>
-    <script src="{{ asset('public/theme/js/charts/02.js') }}"></script>
-    <script src="{{ asset('public/theme/js/vendor/emoji-picker-element/index.js.js') }}"></script>
-    <script src="{{ asset('public/theme/js/app.js') }}"></script>
+    <script src="{{ url('public/theme/js/backend-bundle.min.js') }}"></script>
+    <script src="{{ url('public/theme/js/customizer.js') }}"></script>
+    <script src="{{ url('public/theme/js/sidebar.js') }}"></script>
+    <script src="{{ url('public/theme/js/flex-tree.min.js') }}"></script>
+    <script src="{{ url('public/theme/js/tree.js') }}"></script>
+    <script src="{{ url('public/theme/js/table-treeview.js') }}"></script>
+    <script src="{{ url('public/theme/js/sweetalert.js') }}"></script>
+    <script src="{{ url('public/theme/js/vector-map-custom.js') }}"></script>
+    <script src="{{ url('public/theme/js/chart-custom.js') }}"></script>
+    <script src="{{ url('public/theme/js/charts/01.js') }}"></script>
+    <script src="{{ url('public/theme/js/charts/02.js') }}"></script>
+    <script src="{{ url('public/theme/js/vendor/emoji-picker-element/index.js.js') }}"></script>
+    <script src="{{ url('public/theme/js/app.js') }}"></script>
 </body>
 
 </html>

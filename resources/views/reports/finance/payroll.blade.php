@@ -60,8 +60,11 @@
                                 <th>Tender</th>
                             </tr>
                             @foreach($work_orders as $wo)
+                            @if(isset($wo))
                             <tr> </tr>
-                            <td>{{ $wo->invoice->first()->id or '' }}</td>
+                            @if(isset($wo->invoice->first()->id))
+                            <td>{{ $wo->invoice->first()->id}}</td>
+                            @endif
                             <td>{{ $wo->id }} @if ($wo->shop_work) <span class="bg-info">Shop Work</span> @endif</td>
                             <td>{{ $wo->customer->full_name() }}</td>
                             @php
@@ -72,8 +75,11 @@
                             @endphp
                             <td>${{ number_format($ts, 2) }}</td>
                             <td>@if($wo->invoice->first()) ${{ number_format($wo->invoice->first()->amount, 2)  }} @endif</td>
-                            <td>{{ $wo->invoice->first()->paid_with or '' }} @if($wo->invoice->first()) ({{ $wo->invoice->first()->transactions->first()->paid_with_detail or '' }}) @endif</td>
+                            @if(isset($wo->invoice->first()->paid_with))
+                            <td>{{ $wo->invoice->first()->paid_with}} @if($wo->invoice->first()) ({{ $wo->invoice->first()->transactions->first()->paid_with_detail or '' }}) @endif</td>
+                           @endif
                             </tr>
+                            @endif
                             @endforeach
                             <tr>
                                 <td><b>Totals:</b></td>

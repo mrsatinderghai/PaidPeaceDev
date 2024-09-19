@@ -2,7 +2,7 @@
 
 namespace App\Repositories;
 
-use App\Invoice;
+use App\Models\Invoice;
 
 class InvoiceRepository
 {

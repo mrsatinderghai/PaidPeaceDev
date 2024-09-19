@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Repositories\ServiceRepository;
-use App\Service;
+use App\Models\Service;
 use Auth;
 
 class ServiceController extends Controller

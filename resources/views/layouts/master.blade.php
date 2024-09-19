@@ -12,18 +12,18 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel='stylesheet' type='text/css'>
 
   <!-- Favicon -->
-  <link rel="shortcut icon" href="{{ asset('public/theme/images/favicon.ico') }}">
+  <link rel="shortcut icon" href="{{ url('public/theme/images/favicon.ico') }}">
 
-  <link rel="stylesheet" href="{{ asset('public/theme/css/backend-plugin.min.css') }}">
-  <link rel="stylesheet" href="{{ asset('public/theme/css/backend.css?v=1.0.0') }}">
-  <link rel="stylesheet" href="{{ asset('public/theme/css/custom.css') }}">
+  <link rel="stylesheet" href="{{ url('public/theme/css/backend-plugin.min.css') }}">
+  <link rel="stylesheet" href="{{ url('public/theme/css/backend.css?v=1.0.0') }}">
+  <link rel="stylesheet" href="{{ url('public/theme/css/custom.css') }}">
 
 
 
 
   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/flick/jquery-ui.css">
-  <link href="{{ URL::asset('public/css/jexly.css') }}" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" type="text/css" href="{{ URL::asset('public/datetimepicker/jquery.datetimepicker.css') }}">
+  <link href="{{ url('public/css/jexly.css') }}" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="{{ url('public/datetimepicker/jquery.datetimepicker.css') }}">
 
 
 
@@ -65,19 +65,19 @@
 
 
 
-  <script src="{{ asset('public/theme/js/backend-bundle.min.js') }}"></script>
-  <script src="{{ asset('public/theme/js/customizer.js') }}"></script>
-  <script src="{{ asset('public/theme/js/sidebar.js') }}"></script>
-  <script src="{{ asset('public/theme/js/flex-tree.min.js') }}"></script>
-  <script src="{{ asset('public/theme/js/tree.js') }}"></script>
-  <script src="{{ asset('public/theme/js/table-treeview.js') }}"></script>
-  <script src="{{ asset('public/theme/js/sweetalert.js') }}"></script>
-  <script src="{{ asset('public/theme/js/vector-map-custom.js') }}"></script>
-  <script src="{{ asset('public/theme/js/chart-custom.js') }}"></script>
-  <script src="{{ asset('public/theme/js/charts/01.js') }}"></script>
-  <script src="{{ asset('public/theme/js/charts/02.js') }}"></script>
-  <script src="{{ asset('public/theme/js/vendor/emoji-picker-element/index.js.js') }}"></script>
-  <script src="{{ asset('public/theme/js/app.js') }}"></script>
+  <script src="{{ url('public/theme/js/backend-bundle.min.js') }}"></script>
+  <script src="{{ url('public/theme/js/customizer.js') }}"></script>
+  <script src="{{ url('public/theme/js/sidebar.js') }}"></script>
+  <script src="{{ url('public/theme/js/flex-tree.min.js') }}"></script>
+  <script src="{{ url('public/theme/js/tree.js') }}"></script>
+  <script src="{{ url('public/theme/js/table-treeview.js') }}"></script>
+  <script src="{{ url('public/theme/js/sweetalert.js') }}"></script>
+  <script src="{{ url('public/theme/js/vector-map-custom.js') }}"></script>
+  <script src="{{ url('public/theme/js/chart-custom.js') }}"></script>
+  <script src="{{ url('public/theme/js/charts/01.js') }}"></script>
+  <script src="{{ url('public/theme/js/charts/02.js') }}"></script>
+  <script src="{{ url('public/theme/js/vendor/emoji-picker-element/index.js.js') }}"></script>
+  <script src="{{ url('public/theme/js/app.js') }}"></script>
 
 
 

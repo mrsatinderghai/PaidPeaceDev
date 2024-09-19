@@ -116,6 +116,9 @@
                   </tbody>
                   <tfoot>
                     <tr>
+                    <th>Edit</th>
+                    <th>Action</th>
+                    <th>Delete</th>
                      <th><a href="{{ url('/work_order/index/id') }}">WO Number</a></th>
                      <th><a href="{{ url('/work_order/index/customer_id') }}">Customer</a></th>
                      <th>Reason</th>

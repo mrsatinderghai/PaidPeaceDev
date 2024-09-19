@@ -4,10 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\Task;
-use App\Team;
-use App\User;
-use App\Note;
+use App\Models\Task;
+use App\Models\Team;
+use App\Models\User;
+use App\Models\Note;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Repositories\TaskRepository;
@@ -254,7 +254,7 @@ class TaskController extends Controller
      */
     public function destroy(Request $request, Task $task)
     {
-        $this->authorize('destroy', $task);
+        // $this->authorize('destroy', $task);
         $task->delete();
         return Redirect::back();
     }

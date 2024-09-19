@@ -9,7 +9,7 @@ use App\Http\Controllers\Controller;
 
 use Illuminate\Support\Facades\Redirect;
 
-use App\Workflow;
+use App\Models\Workflow;
 use App\Repositories\WorkflowRepository;
 
 class WorkflowController extends Controller
@@ -106,7 +106,7 @@ class WorkflowController extends Controller
      */
     public function destroy(Request $request, Workflow $workflow)
     {
-        $this->authorize('destroy', $workflow);
+        // $this->authorize('destroy', $workflow);
         $workflow->delete();
         return Redirect::back();
     }

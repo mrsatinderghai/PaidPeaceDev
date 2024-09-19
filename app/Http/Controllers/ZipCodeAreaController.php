@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
-use App\Zip_Code_Area;
+use App\Models\Zip_Code_Area;
 
 class ZipCodeAreaController extends Controller
 {

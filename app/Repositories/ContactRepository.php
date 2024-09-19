@@ -2,7 +2,7 @@
 
 namespace App\Repositories;
 
-use App\Contact;
+use App\Models\Contact;
 
 class ContactRepository
 {

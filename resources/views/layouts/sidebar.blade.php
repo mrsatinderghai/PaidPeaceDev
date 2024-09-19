@@ -1,8 +1,8 @@
 <div class="iq-sidebar  sidebar-default  ">
     <div class="iq-sidebar-logo d-flex align-items-end justify-content-between">
         <a href="{{url('/home')}}" class="header-logo">
-            <img src="{{ asset('/public/theme/images/sharpmower.jpg')}}" class="img-fluid rounded-normal light-logo" alt="logo">
-            <img src="{{ asset('/public/theme/images/logo-dark.png')}}" class="img-fluid rounded-normal d-none sidebar-light-img" alt="logo">
+            <img src="{{ url('/public/theme/images/sharpmower.jpg')}}" class="img-fluid rounded-normal light-logo" alt="logo">
+            <img src="{{ url('/public/theme/images/logo-dark.png')}}" class="img-fluid rounded-normal d-none sidebar-light-img" alt="logo">
             <span class="sharp_mower">SharpMower</span>
         </a>
         <div class="side-menu-bt-sidebar-1">
@@ -26,7 +26,7 @@
                     </a>
                 </li>
 
-                @if(!Auth::guest() && Auth::user()->has_role('Admin'))
+                @if(!Auth::guest() && Auth::user()->hasRole('Admin'))
 
 
                 <li class="sidebar-layout {{ request()->is('task') || request()->is('task/create') ? 'active' : '' }}">
@@ -63,7 +63,7 @@
 
                     </ul>
                 </li>
-
+                @if(isset(Auth::user()->team->name))
                 <li class=" sidebar-layout {{ request()->is('team/*') ? 'active' : '' }}">
                     <a href="{{ url('/team/'.Auth::user()->team_id) }}">
                         <i class="">
@@ -72,16 +72,18 @@
                             </svg>
 
                         </i>
+                       
                         <span class="ml-2">{{ Auth::user()->team->name }}</span>
                     </a>
                 </li>
 
                 @endif
+                @endif
 
 
 
                 <li class="sidebar-layout">
-                    @if(Auth::user()->has_role('Admin'))
+                    @if(Auth::user()->hasRole('Admin'))
                     <a href="#schedule" class="collapsed svg-icon" data-toggle="collapse" aria-expanded="false">
                         <i>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
@@ -162,7 +164,7 @@
                             </a>
                         </li>
 
-                        @if(Auth::user()->has_role('Admin'))
+                        @if(Auth::user()->hasRole('Admin'))
                         <li class=" sidebar-layout">
                             <a href="{{ url('work_order') }}" class="svg-icon" data-menu="workOrder_listing">
                                 <i class=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
@@ -200,7 +202,7 @@
                     </ul>
                 </li>
 
-                @if(!Auth::guest() && Auth::user()->has_role('Admin'))
+                @if(!Auth::guest() && Auth::user()->hasRole('Admin'))
 
 
                 <li class="sidebar-layout {{ request()->is('customer/*') ? 'active' : '' }}">

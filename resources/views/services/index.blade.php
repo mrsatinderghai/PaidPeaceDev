@@ -13,7 +13,7 @@
 					<div class="col-xs-12 col-md-6 part_section">
 						@include('services.add')
 					</div>
-					<div class="col-xs-12 col-md-8">
+					<div class="col-xs-12 col-md-12">
 						@include('services.list')
 					</div>
 				</div>

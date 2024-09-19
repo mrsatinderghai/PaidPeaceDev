@@ -2,7 +2,7 @@
 	<div class="panel-heading">
 		New Note
 	</div>
-	<div class="panel-body">
+	<div class="panel-body pl-0">
 		{!! Form::open(array('route' => 'note.store')) !!}
 		<div class="form-group">
 			{!! Form::textarea('text', null, array('placeholder' => 'New note...', 'class' => 'form-control')) !!}

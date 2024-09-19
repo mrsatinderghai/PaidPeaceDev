@@ -2,7 +2,7 @@
 				<div class="panel-heading">
 					New Workflow
 				</div>
-				<div class="panel-body">
+				
 					@include('common.errors')
 
 					{!! Form::open(array('class' => 'form-horizontal', 'route' => 'workflow.store')) !!}
@@ -10,33 +10,34 @@
 						{!! Form::hidden('parent_id', $parent->id) !!}
 						{!! Form::hidden('parent_type', $parent_type) !!}
 					@endif
+					<div class="panel-body pl-0">
 					<div class="form-group">
-						{!! Form::label('assign_type', 'Type Assign', array('class' => 'col-sm-4 control-label')) !!}
-						<div class="col-sm-8">
+						{!! Form::label('assign_type', 'Type Assign', array('class' => 'col-xs-12 col-sm-12 pl-0')) !!}
+						<div class="col-xs-10">
 							{!! Form::select('assign_type', array('Sale' => 'Sale', 'Task' => 'Task'),'Task', array('class' => 'form-control')) !!}
 						</div>
 					</div>
 					<div class="form-group">
-						{!! Form::label('assign_to', 'Assign To', array('class' => 'col-sm-4 control-label')) !!}
-						<div class="col-sm-8">
+						{!! Form::label('assign_to', 'Assign To', array('class' => 'col-xs-12 col-sm-12 pl-0')) !!}
+						<div class="col-xs-10">
 							{!! Form::select('assign_to', $team_members,null, array('class' => 'form-control')) !!}
 						</div>
 					</div>
 					<div class="form-group">
-						{!! Form::label('assign_when', 'Assign When', array('class' => 'col-sm-4 control-label')) !!}
-						<div class="col-sm-8">
+						{!! Form::label('assign_when', 'Assign When', array('class' => 'col-xs-12 col-sm-12 pl-0')) !!}
+						<div class="col-xs-10">
 							{!! Form::select('assign_when', array('Completed' => 'Completed', 'In Process' => 'In Process'),'Completed', array('class' => 'form-control')) !!}
 						</div>
 					</div>
 					<div class="form-group">
-						{!! Form::label('name', 'Name', array('class' => 'col-sm-4 control-label')) !!}
-						<div class="col-sm-8">
+						{!! Form::label('name', 'Name', array('class' => 'col-xs-12 col-sm-12 pl-0')) !!}
+						<div class="col-xs-10">
 							{!! Form::text('name', '', array('class' => 'form-control')) !!}
 						</div>
 					</div>
 					<div class="form-group">
-						{!! Form::label('priority', 'Priority', array('class' => 'col-sm-4 control-label')) !!}
-						<div class="col-sm-8">
+						{!! Form::label('priority', 'Priority', array('class' => 'col-xs-12 col-sm-12 pl-0')) !!}
+						<div class="col-xs-10">
 							{!! Form::select('priority', array('Emergency' => 'Emergency', 'Urgent' => 'Urgent', 'High' => 'High', 'Medium' => 'Medium', 'Low' => 'Low'),'Medium', array('class' => 'form-control')) !!}
 						</div>
 					</div>
@@ -45,8 +46,8 @@
 	                    $new_due_date = date("Y-m-d", $new_due_date);
                     ?>
 					<div class="form-group">
-						{!! Form::label('due_date', 'Due Date', array('class' => 'col-sm-4 control-label')) !!}
-						<div class="col-sm-8">
+						{!! Form::label('due_date', 'Due Date', array('class' => 'col-xs-12 col-sm-12 pl-0')) !!}
+						<div class="col-xs-10">
 							{!! Form::date('due_date', $new_due_date, array('class' => 'form-control')) !!}
 						</div>
 					</div>

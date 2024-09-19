@@ -137,7 +137,7 @@
                                         <td>
                                             <div class="d-flex align-items-center">
                                                 <div class="avatar-45 mr-2">
-                                                    <img src="{{ asset('/public/theme/images/user/2.jpg')}}" class="img-fluid rounded-circle" alt="image">
+                                                    <img src="{{ url('/public/theme/images/user/2.jpg')}}" class="img-fluid rounded-circle" alt="image">
                                                 </div>
                                                 <div>Maggie Potts</div>
                                             </div>
@@ -157,7 +157,7 @@
                                         <td>
                                             <div class="d-flex align-items-center">
                                                 <div class="avatar-45 mr-2">
-                                                    <img src="{{ asset('/public/theme/images/user/5.jpg')}}" class="img-fluid rounded-circle" alt="image">
+                                                    <img src="{{ url('/public/theme/images/user/5.jpg')}}" class="img-fluid rounded-circle" alt="image">
                                                 </div>
                                                 <div>Kevin Adkins</div>
                                             </div>
@@ -177,7 +177,7 @@
                                         <td>
                                             <div class="d-flex align-items-center">
                                                 <div class="avatar-45 mr-2">
-                                                    <img src="{{ asset('/public/theme/images/user/1.jpg')}}" class="img-fluid rounded-circle" alt="image">
+                                                    <img src="{{ url('/public/theme/images/user/1.jpg')}}" class="img-fluid rounded-circle" alt="image">
                                                 </div>
                                                 <div>Max Lynn</div>
                                             </div>
@@ -197,7 +197,7 @@
                                         <td>
                                             <div class="d-flex align-items-center">
                                                 <div class="avatar-45 mr-2">
-                                                    <img src="{{ asset('/public/theme/images/user/3.jpg')}}" class="img-fluid rounded-circle" alt="image">
+                                                    <img src="{{ url('/public/theme/images/user/3.jpg')}}" class="img-fluid rounded-circle" alt="image">
                                                 </div>
                                                 <div>Danniw Yatt</div>
                                             </div>

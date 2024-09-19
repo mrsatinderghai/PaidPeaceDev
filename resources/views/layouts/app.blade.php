@@ -17,8 +17,8 @@
     <!-- Styles -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/flick/jquery-ui.css">
-    <link href="{{ URL::asset('public/css/jexly.css') }}" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="{{ URL::asset('public/datetimepicker/jquery.datetimepicker.css') }}">
+    <link href="{{ url('public/css/jexly.css') }}" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="{{ url('public/datetimepicker/jquery.datetimepicker.css') }}">
     {{-- <link href="{{ elixir('public/css/app.css') }}" rel="stylesheet"> --}}
 
     <style>
@@ -65,7 +65,7 @@
 
                 <!-- Branding Image -->
                 <a class="navbar-brand" href="{{ url('/home') }}">
-                    <img src="{{ URL::asset('public/img/sharpmower.jpg') }}" height="50px" width="100px" style="margin-top: -15px" />
+                    <img src="{{ url('public/img/sharpmower.jpg') }}" height="50px" width="100px" style="margin-top: -15px" />
                 </a>
             </div>
 
@@ -73,7 +73,7 @@
                 <!-- Left Side Of Navbar -->
                 <ul class="nav navbar-nav">
                 @if(! Auth::guest())
-                @if (Auth::user()->has_role('Admin'))
+                @if (Auth::user()->hasRole('Admin'))
                     <li>
                         <a href="{{ url('/customer') }}">
                             <i class="fa fa-users"></i> Customers

@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Repositories\TeamRepository;
-use App\Team;
+use App\Models\Team;
 
 class TeamController extends Controller
 {

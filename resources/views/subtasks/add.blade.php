@@ -16,10 +16,10 @@
     {!! Form::open(array('route' => 'task.store', 'class' => 'form-horizontal')) !!}
     {!! Form::hidden('parent_id', $parent->id) !!}
     {!! Form::hidden('parent_type', $parent_type) !!}
-    <div class="panel-body">
+    <div class="panel-body pl-0">
         <div class="form-group">
-            {!! Form::label('name', 'Task Name', array('class' => 'col-sm-3 control-label')) !!}
-            <div class="col-sm-6">
+            {!! Form::label('name', 'Task Name', array('class' => 'col-xs-12 col-sm-12 pl-0')) !!}
+            <div class="col-xs-10">
                 {!! Form::text('name', '', array('class' => 'form-control')) !!}
             </div>
         </div>
@@ -29,15 +29,15 @@
         $new_due_date = date("Y-m-d", $new_due_date);
         ?>
         <div class="form-group">
-            {!! Form::label('due_date', 'Due Date', array('class' => 'col-sm-3 control-label')) !!}
-            <div class="col-sm-6">
+            {!! Form::label('due_date', 'Due Date', array('class' => 'col-xs-12 col-sm-12 pl-0')) !!}
+            <div class="col-xs-10">
                 {!! Form::date('due_date', $new_due_date, array('class' => 'form-control')) !!}
             </div>
         </div>
 
         <div class="form-group">
-            {!! Form::label('assigned_to_user_id', 'Assigned To', array('class' => 'col-sm-3 control-label')) !!}
-            <div class="col-sm-6">
+            {!! Form::label('assigned_to_user_id', 'Assigned To', array('class' => 'col-xs-12 col-sm-12 pl-0')) !!}
+            <div class="col-xs-10">
                 {!! Form::select('assigned_to_user_id', $team_member_options, null, array('class' => 'form-control')) !!}
             </div>
         </div>
@@ -52,8 +52,8 @@
             );
             ?>
             <div class="form-group">
-                {!! Form::label('priority', 'Priority', array('class' => 'col-sm-3 control-label')) !!}
-                <div class="col-sm-6">
+                {!! Form::label('priority', 'Priority', array('class' => 'col-xs-12 col-sm-12 pl-0')) !!}
+                <div class="col-xs-10">
                     {!! Form::select('priority', $priority_options, 'Medium', array('class' => 'form-control')) !!}
                 </div>
             </div>

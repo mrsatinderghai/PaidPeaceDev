@@ -8,7 +8,7 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Repositories\NoteRepository;
 use Illuminate\Support\Facades\Redirect;
-use App\Note;
+use App\Models\Note;
 
 class NoteController extends Controller
 {
@@ -97,7 +97,7 @@ class NoteController extends Controller
     
     public function destroy(Request $request, Note $note)
     {
-        $this->authorize('destroy', $note);
+        // $this->authorize('destroy', $note);
         $note->delete();
         return Redirect::back();
     }

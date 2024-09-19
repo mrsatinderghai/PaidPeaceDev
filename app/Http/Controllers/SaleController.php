@@ -8,7 +8,7 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Repositories\SaleRepository;
 use Illuminate\Support\Facades\Redirect;
-use App\Sale;
+use App\Models\Sale;
 use App\Repositories\NoteRepository;
 use App\Repositories\TaskRepository;
 use App\Repositories\InvoiceRepository;
@@ -262,7 +262,7 @@ class SaleController extends Controller
   */
   public function destroy(Request $request, Sale $sale)
   {
-    $this->authorize('destroy', $sale);
+    // $this->authorize('destroy', $sale);
     $sale->delete();
     return Redirect::back();
   }

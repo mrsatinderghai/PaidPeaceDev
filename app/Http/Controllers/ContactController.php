@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Repositories\ContactRepository;
-use App\Contact;
+use App\Models\Contact;
 use Illuminate\Support\Facades\Redirect;
 use App\Repositories\NoteRepository;
 
@@ -127,7 +127,7 @@ class ContactController extends Controller
      */
     public function destroy(Request $request, Contact $contact)
     {
-        $this->authorize('destroy', $contact);
+        // $this->authorize('destroy', $contact);
         $contact->delete();
         return Redirect::back();
     }

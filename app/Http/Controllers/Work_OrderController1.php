@@ -4,27 +4,27 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Requests;
-use App\Work_Order;
+use App\Models\Work_Order;
 use App\Repositories\Work_OrderRepository;
 use App\Repositories\CustomerRepository;
 use Auth;
-use App\Customer;
-use App\Team;
+use App\Models\Customer;
+use App\Models\Team;
 use App\Repositories\ServiceRepository;
-use App\Invoice;
+use App\Models\Invoice;
 use PDF;
-use App\Work_Order_Service;
-use App\Service;
+use App\Models\Work_Order_Service;
+use App\Models\Service;
 use Carbon\Carbon;
 use App\Repositories\ProductRepository;
-use App\Product;
+use App\Models\Product;
 use App\Repositories\InvoiceRepository;
-use App\Truck;
-use App\Custom_Service;
-use App\Custom_Part;
-use App\Date_Note;
-use App\Trucks_Users_Day;
-use App\Time_Slot_Lock;
+use App\Models\Truck;
+use App\Models\Custom_Service;
+use App\Models\Custom_Part;
+use App\Models\Date_Note;
+use App\Models\Trucks_Users_Day;
+use App\Models\Time_Slot_Lock;
 use Mail;
 
 class Work_OrderController extends Controller
@@ -176,7 +176,7 @@ class Work_OrderController extends Controller
           }
         }
 
-        if (Auth::user()->has_role('Admin')) {
+        if (Auth::user()->hasRole('Admin')) {
           return redirect('/work_order/schedule');
         } else {
           return redirect()->route('work_order.edit', $work_order->id);
@@ -470,7 +470,7 @@ class Work_OrderController extends Controller
 
     public function schedule($today = null)
     {
-      if (! Auth::user()->has_role('Admin')) {
+      if (! Auth::user()->hasRole('Admin')) {
         return redirect()->route('work_order.my_schedule');
       }
       

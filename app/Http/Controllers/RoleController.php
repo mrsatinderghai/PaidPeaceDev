@@ -8,7 +8,7 @@ use App\Http\Requests;
 
 use App\Repositories\RoleRepository;
 
-use App\Role;
+use App\Models\Role;
 
 class RoleController extends Controller
 {

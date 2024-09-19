@@ -27,7 +27,7 @@
                   {!! Form::file('logo', array('class' => 'form-control')) !!}
                 </div>
                 <div class="col-sm-2">
-                  <img src="{{ URL::asset($team->logo) }}" height="25px" width="100px" />
+                  <img src="{{ url($team->logo) }}" height="25px" width="100px" />
                 </div>
               </div>
 

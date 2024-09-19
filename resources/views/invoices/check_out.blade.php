@@ -4,7 +4,7 @@
 
 <div class="container">
     @include('common.errors')
-  <img style="float: left; position: relative; height:45px;" class="img-responsive" src="{{ URL::asset($team->logo) }}" />
+  <img style="float: left; position: relative; height:45px;" class="img-responsive" src="{{ url($team->logo) }}" />
   <h1 align="right">INVOICE</h1>
   <table align="right">
     <tr>

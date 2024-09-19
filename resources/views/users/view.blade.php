@@ -11,7 +11,7 @@
               </svg>
               </a></div>
             <div class="profile-card rounded">
-              <!-- <img src="../assets/images/user/1.jpg" alt="profile-bg" class="avatar-100 rounded d-block mx-auto img-fluid mb-3"> -->
+              <!-- <img src="../url/images/user/1.jpg" alt="profile-bg" class="avatar-100 rounded d-block mx-auto img-fluid mb-3"> -->
               <h3 class="font-600 text-white text-center mb-5"> {{ $user->name}}</h3>
             </div>
             <div class="pro-content rounded">
@@ -72,7 +72,7 @@
                   <td>
                     <?php
                     $x = null;
-                    if ($user->has_role($role->name)) {
+                    if ($user->hasRole($role->name)) {
                       $x = 'true';
                     }
                     ?>

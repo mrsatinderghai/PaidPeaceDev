@@ -2,8 +2,8 @@
 
 namespace App\Repositories;
 
-use App\Team;
-use App\User;
+use App\Models\Team;
+use App\Models\User;
 
 class TeamRepository
 {

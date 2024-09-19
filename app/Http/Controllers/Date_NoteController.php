@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
-use App\Date_Note;
+use App\Models\Date_Note;
 
 class Date_NoteController extends Controller
 {

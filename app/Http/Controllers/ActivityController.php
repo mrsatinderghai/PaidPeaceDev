@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use Auth;
-use App\Activity;
+use App\Models\Activity;
 
 class ActivityController extends Controller
 {

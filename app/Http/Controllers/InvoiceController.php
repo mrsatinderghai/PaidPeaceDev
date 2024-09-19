@@ -3,20 +3,20 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Invoice;
+use App\Models\Invoice;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Redirect;
-use App\Sale;
-use App\Company;
+use App\Models\Sale;
+use App\Models\Company;
 use PDF;
 use App\Repositories\InvoiceRepository;
 use App\Repositories\CompanyRepository;
 use App\Repositories\SaleRepository;
 use Auth;
-use App\Work_Order;
-use App\Customer;
-use App\Transaction;
+use App\Models\Work_Order;
+use App\Models\Customer;
+use App\Models\Transaction;
 use Mail;
 use Datatables;
 
@@ -263,7 +263,7 @@ class InvoiceController extends Controller
      */
     public function destroy(Request $request, Invoice $invoice)
     {
-        $this->authorize('destroy', $invoice);
+        // $this->authorize('destroy', $invoice);
         $invoice->delete();
         return Redirect::back();
     }
@@ -382,7 +382,7 @@ class InvoiceController extends Controller
         $customer->save();
 
       }
-      if (! Auth::user()->has_role('Admin')) {
+      if (! Auth::user()->hasRole('Admin')) {
         return redirect()->route('work_order.my_schedule');
       }
       

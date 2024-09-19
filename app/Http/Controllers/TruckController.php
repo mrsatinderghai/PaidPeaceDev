@@ -6,9 +6,9 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
-use App\Truck;
-use App\Trucks_Users_Day;
-use App\Work_Order;
+use App\Models\Truck;
+use App\Models\Trucks_Users_Day;
+use App\Models\Work_Order;
 
 class TruckController extends Controller
 {
@@ -76,6 +76,9 @@ class TruckController extends Controller
     public function edit($id)
     {
         //
+        $trucks = Truck::findOrFail($id);
+        // $this->authorize('edit', $user);
+        return view('trucks.edit', ['truck' => $trucks]);
     }
 
     /**
@@ -88,6 +91,14 @@ class TruckController extends Controller
     public function update(Request $request, $id)
     {
         //
+        $this->validate($request, [
+          'name' => 'required|max:255'
+      ]);
+
+      $truck = Truck::findOrFail($id);
+      $truck->name = $request->name;
+      $truck->save();
+      return redirect()->route('truck.index');
     }
 
     /**

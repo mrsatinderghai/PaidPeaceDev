@@ -2,7 +2,7 @@
 
 namespace App\Repositories;
 
-use App\Sale;
+use App\Models\Sale;
 use Auth;
 
 class SaleRepository

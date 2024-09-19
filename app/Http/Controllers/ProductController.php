@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Repositories\ProductRepository;
-use App\Product;
+use App\Models\Product;
 use Auth;
 
 class ProductController extends Controller

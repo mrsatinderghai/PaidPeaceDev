@@ -2,9 +2,9 @@
 
 namespace App\Repositories;
 
-use App\Workflow;
-use App\User;
-use App\Task;
+use App\Models\Workflow;
+use App\Models\User;
+use App\Models\Task;
 use Auth;
 
 class WorkflowRepository

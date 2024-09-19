@@ -7,9 +7,9 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use Auth;
-use App\Customer;
+use App\Models\Customer;
 use App\Repositories\CustomerRepository;
-use App\Work_Order;
+use App\Models\Work_Order;
 use App\Repositories\Work_OrderRepository;
 
 class CustomerController extends Controller

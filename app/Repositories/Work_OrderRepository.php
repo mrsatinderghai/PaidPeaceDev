@@ -2,7 +2,7 @@
 
 namespace App\Repositories;
 
-use App\Work_Order;
+use App\Models\Work_Order;
 use Auth;
 
 class Work_OrderRepository

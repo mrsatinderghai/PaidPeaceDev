@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Repositories\TransactionRepository;
-use App\Transaction;
+use App\Models\Transaction;
 use Illuminate\Support\Facades\Redirect;
 
 class TransactionController extends Controller
@@ -116,7 +116,7 @@ class TransactionController extends Controller
      */
     public function destroy(Request $request, Transaction $transaction)
     {
-        $this->authorize('destroy', $transaction);
+        // $this->authorize('destroy', $transaction);
         $transaction->delete();
         return Redirect::back();
     }

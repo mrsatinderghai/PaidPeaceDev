@@ -2,9 +2,9 @@
 
 namespace App\Repositories;
 
-use App\User;
-use App\Task;
-use App\Sale;
+use App\Models\User;
+use App\Models\Task;
+use App\Models\Sale;
 use Auth;
 
 class TaskRepository
