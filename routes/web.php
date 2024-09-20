@@ -159,7 +159,7 @@ Route::group(['middleware' => ['web']], function () {
     Route::post('truck/assign_user_to_day', 'App\Http\Controllers\TruckController@assign_user_to_day');
     Route::resource('truck', 'App\Http\Controllers\TruckController');
 
-    Route::post('date_note/save', 'Date_App\Http\Controllers\NoteController@save');
+    Route::post('date_note/save', 'App\Http\Controllers\Date_NoteController@save');
 
     Route::get('time_slot_locks/lock/{date}/{truck_id}/{time_slot}/{action}', ['as' => 'time_slot_locks.lock', 'uses' => 'App\Http\Controllers\Work_OrderController@lock_time_slot']);
 

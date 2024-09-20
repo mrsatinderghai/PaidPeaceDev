@@ -190,7 +190,7 @@
                           <i class="fa fa-check"></i>
                         </button>
                         <input type="hidden" value="{{$date}}" name="date">
-                        <textarea rows="3" cols="20" name="notes" style="float:right;" placeholder="Notes...">{{ $date_notes[$date][$truck->id][0]->notes or '' }}</textarea>
+                        <textarea rows="3" cols="20" name="notes" style="float:right;" placeholder="Notes...">{{ $date_notes[$date][$truck->id][0]->notes ?? '' }}</textarea>
 
                       </form>
                       <a href="{{ route('work_order.truck_schedule', [$truck->id, $date]) }}">
