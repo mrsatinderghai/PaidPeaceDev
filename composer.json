@@ -15,6 +15,7 @@
         "laravel/ui": "^4.5",
         "laravelcollective/html": "^6.4",
         "spatie/laravel-permission": "^6.9",
+        "stancl/tenancy": "^3.8",
         "yajra/laravel-datatables-oracle": "^10.11"
     },
     "require-dev": {

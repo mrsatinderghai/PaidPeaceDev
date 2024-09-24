@@ -39,7 +39,8 @@ Route::group(['middleware' => ['web']], function () {
 });
 
 
-Route::group(['middleware' => ['web']], function () {
+Route::group(['middleware' => ['web','identifyTenant']], function () {
+
     Route::auth();
     Route::get('/home', 'App\Http\Controllers\HomeController@index');
     Route::get('/access_denied', 'App\Http\Controllers\HomeController@access_denied');
