@@ -49,17 +49,6 @@
                                     {!! csrf_field() !!}
                                     <div class="row">
                                         <div class="col-lg-12">
-                                            <div class="form-group{{ $errors->has('domain') ? ' has-error' : '' }}">
-                                                <label class="text-secondary">Tenant Name</label>
-                                                <input class="form-control" type="text" name="domain" placeholder="Enter Tenant Name" value="{{ old('domain') }}">
-                                                @if ($errors->has('domain'))
-                                                <span class="help-block">
-                                                    <strong>{{ $errors->first('domain') }}</strong>
-                                                </span>
-                                                @endif
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-12 mt-2">
                                             <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
                                                 <label class="text-secondary">Name</label>
                                                 <input class="form-control" type="text" name="name" placeholder="Enter Name" value="{{ old('name') }}">

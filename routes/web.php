@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -29,8 +30,6 @@ Route::get('/', function () {
 */
 
 
-
-
 Route::group(['middleware' => ['web']], function () {
 
     Route::get('/dashboard', 'App\Http\Controllers\DashboardController@index');
@@ -39,8 +38,7 @@ Route::group(['middleware' => ['web']], function () {
 });
 
 
-Route::group(['middleware' => ['web','identifyTenant']], function () {
-
+Route::group(['middleware' => ['web']], function () {
     Route::auth();
     Route::get('/home', 'App\Http\Controllers\HomeController@index');
     Route::get('/access_denied', 'App\Http\Controllers\HomeController@access_denied');

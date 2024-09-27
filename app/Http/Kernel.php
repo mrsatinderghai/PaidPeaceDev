@@ -13,6 +13,18 @@ class Kernel extends HttpKernel
      *
      * @var array<int, class-string|string>
      */
+
+     protected $routeMiddleware = [
+        'check.tenant.domain' => \App\Http\Middleware\CheckTenantDomain::class,
+    ];
+
+    protected $commands = [
+        Commands\MigrateTenants::class,
+    ];
+    
+
+    
+
     protected $middleware = [
         // \App\Http\Middleware\TrustHosts::class,
         \App\Http\Middleware\TrustProxies::class,
@@ -28,12 +40,9 @@ class Kernel extends HttpKernel
      *
      * @var array<string, array<int, class-string|string>>
      */
-    protected $routeMiddleware = [
-        'identifyTenant' => \App\Http\Middleware\IdentifyTenant::class,
-    ];
-    
     protected $middlewareGroups = [
         'web' => [
+            \App\Http\Middleware\TenantMiddleware::class,
             \App\Http\Middleware\EncryptCookies::class,
             \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
             \Illuminate\Session\Middleware\StartSession::class,
